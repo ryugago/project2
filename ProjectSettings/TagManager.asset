@@ -1,0 +1,54 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!78 &1
+TagManager:
+  serializedVersion: 2
+  tags:
+  - CardKey
+  - ViewPoint
+  - Letter
+  - Melee
+  - Hit1
+  - Phone
+  - Weapon
+  - Hit0
+  - CardKey1
+  - Object
+  - CardKey2
+  layers:
+  - Default
+  - TransparentFX
+  - Ignore Raycast
+  - 
+  - Water
+  - UI
+  - arm,phone
+  - TV
+  - Player
+  - Wall
+  - 
+  - Ball
+  - Ballstop
+  - 
+  - 
+  - 
+  - 
+  - UIcamera
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - trigger
+  m_SortingLayers:
+  - name: Default
+    uniqueID: 0
+    locked: 0
