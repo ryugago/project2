@@ -1,0 +1,601 @@
+{ "pid": 0, "tid": -1, "ph": "M", "name": "process_name", "args": { "name": "BeeDriver" } },
+{ "pid": 0, "tid": -1, "ph": "M", "name": "process_sort_index", "args": { "sort_index": "-2" } },
+{ "pid": 0, "tid": 1, "ph": "M", "name": "thread_name", "args": { "name": "" } },
+{ "pid": 0, "tid": 1, "ts": 1716645929327914, "dur": 4030808, "ph": "X", "name": "Build Player", "args": {} },
+{ "pid": 0, "tid": 1, "ts": 1716645929328116, "dur": 3091, "ph": "X", "name": "WriteBuildProgramData", "args": {} },
+{ "pid": 0, "tid": 1, "ts": 1716645929331209, "dur": 30985, "ph": "X", "name": "Run Backend", "args": {} },
+{ "pid": 0, "tid": 1, "ts": 1716645929362196, "dur": 756039, "ph": "X", "name": "BuildProgram", "args": {} },
+{ "pid": 0, "tid": 1, "ts": 1716645930118236, "dur": 3239166, "ph": "X", "name": "Run Backend", "args": {} },
+{ "pid": 0, "tid": 1, "ts": 1716645933357405, "dur": 1316, "ph": "X", "name": "Finish", "args": {} },
+{ "pid": 0, "tid": 1, "ts": 1716645933359254, "dur": 13, "ph": "X", "name": "", "args": {} },
+{ "pid": 35942, "tid": -1, "ph": "M", "name": "process_name", "args": { "name": "netcorerun.dll" } },
+{ "pid": 35942, "tid": -1, "ph": "M", "name": "process_sort_index", "args": { "sort_index": "-1" } },
+{ "pid": 35942, "tid": 1, "ph": "M", "name": "thread_name", "args": { "name": "" } },
+{ "pid": 35942, "tid": 1, "ts": 1716645929795900, "dur": 305900, "ph": "X", "name": "BuildProgram", "args": {} },
+{ "pid": 35942, "tid": 1, "ts": 1716645929796710, "dur": 63377, "ph": "X", "name": "BuildProgramContextConstructor", "args": {} },
+{ "pid": 35942, "tid": 1, "ts": 1716645930081544, "dur": 6244, "ph": "X", "name": "OutputData.Write", "args": {} },
+{ "pid": 35942, "tid": 1, "ts": 1716645930087791, "dur": 14002, "ph": "X", "name": "Backend.Write", "args": {} },
+{ "pid": 35942, "tid": 1, "ts": 1716645930088344, "dur": 12926, "ph": "X", "name": "JsonToString", "args": {} },
+{ "pid": 35942, "tid": 1, "ts": 1716645930107164, "dur": 995, "ph": "X", "name": "", "args": {} },
+{ "pid": 35942, "tid": 1, "ts": 1716645930106081, "dur": 2098, "ph": "X", "name": "Write chrome-trace events", "args": {} },
+{ "pid": 0, "tid": 1, "ts": 1716645933359348, "dur": 221, "ph": "X", "name": "buildprogram0.traceevents", "args": {} },
+{ "cat":"", "pid":12345, "tid":0, "ts":0, "ph":"M", "name":"process_name", "args": { "name":"bee_backend" } }
+,{ "pid":12345, "tid":0, "ts":1716645930165160, "dur":1095, "ph":"X", "name": "DriverInitData",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1716645930166259, "dur":261, "ph":"X", "name": "Tundra",  "args": { "detail":"RemoveStaleOutputs" }}
+,{ "pid":12345, "tid":0, "ts":1716645930166548, "dur":12, "ph":"X", "name": "Tundra",  "args": { "detail":"PrepareNodes" }}
+,{ "pid":12345, "tid":0, "ts":1716645930166561, "dur":308, "ph":"X", "name": "Tundra",  "args": { "detail":"BuildQueueInit" }}
+,{ "pid":12345, "tid":0, "ts":1716645930166883, "dur":340, "ph":"X", "name": "EnqueueRequestedNodes",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1716645930167224, "dur":0, "ph":"X", "name": "SortWorkingStack",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1716645933347780, "dur":321, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1716645933348101, "dur":11, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1716645933348112, "dur":1, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1716645933348113, "dur":5, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1716645933348118, "dur":1, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1716645933348119, "dur":4, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1716645933348123, "dur":2, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1716645933348125, "dur":3, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1716645933348128, "dur":2, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1716645933348130, "dur":3, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1716645933348133, "dur":1, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1716645933348134, "dur":4, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1716645933348138, "dur":2, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1716645933348140, "dur":2, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1716645933348142, "dur":1, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1716645933348143, "dur":4, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1716645933348147, "dur":2, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1716645933348149, "dur":2, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1716645933348151, "dur":2, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1716645933348153, "dur":3, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1716645933348156, "dur":1, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1716645933348157, "dur":3, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1716645933348160, "dur":1, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1716645933348161, "dur":4, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1716645933348165, "dur":1, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1716645933348166, "dur":3, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1716645933348169, "dur":1, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1716645933348170, "dur":4, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1716645933348174, "dur":1, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1716645933348175, "dur":3, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1716645933348178, "dur":1, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1716645933348179, "dur":4, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1716645933348183, "dur":0, "ph":"X", "name": "SharedResourceDestroy",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1716645933348198, "dur":2, "ph":"X", "name": "BuildQueueDestroyTail",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1716645933348471, "dur":2027, "ph":"X", "name": "Tundra",  "args": { "detail":"Write AllBuiltNodes" }}
+,{ "pid":12345, "tid":1, "ts":1716645930168228, "dur":0, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1716645930168229, "dur":1745, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1716645930169975, "dur":12147, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/respm/OneDrive/Desktop/hari/MonoBleedingEdge/etc/mono/4.5/web.config" }}
+,{ "pid":12345, "tid":1, "ts":1716645930182126, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1716645930182200, "dur":7659, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/respm/OneDrive/Desktop/hari/MonoBleedingEdge/etc/mono/4.5/web.config" }}
+,{ "pid":12345, "tid":1, "ts":1716645930189919, "dur":40691, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/respm/OneDrive/Desktop/hari/HariStation_Data/Managed/UnityEngine.UnityWebRequestAssetBundleModule.dll" }}
+,{ "pid":12345, "tid":1, "ts":1716645930230613, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1716645930230619, "dur":2267, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/respm/OneDrive/Desktop/hari/HariStation_Data/Managed/UnityEngine.UnityWebRequestAssetBundleModule.dll" }}
+,{ "pid":12345, "tid":1, "ts":1716645930232896, "dur":691, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/respm/OneDrive/Desktop/hari/HariStation_Data/Managed/UnityEngine.UI.dll" }}
+,{ "pid":12345, "tid":1, "ts":1716645930233590, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1716645930233596, "dur":1165, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/respm/OneDrive/Desktop/hari/HariStation_Data/Managed/UnityEngine.UI.dll" }}
+,{ "pid":12345, "tid":1, "ts":1716645930234778, "dur":1486, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/respm/OneDrive/Desktop/hari/HariStation_Data/Managed/UnityEngine.TextRenderingModule.dll" }}
+,{ "pid":12345, "tid":1, "ts":1716645930236267, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1716645930236273, "dur":13789, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/respm/OneDrive/Desktop/hari/HariStation_Data/Managed/UnityEngine.TextRenderingModule.dll" }}
+,{ "pid":12345, "tid":1, "ts":1716645930250081, "dur":5851, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/respm/OneDrive/Desktop/hari/HariStation_Data/Managed/UnityEngine.SharedInternalsModule.dll" }}
+,{ "pid":12345, "tid":1, "ts":1716645930255935, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1716645930255940, "dur":1067, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/respm/OneDrive/Desktop/hari/HariStation_Data/Managed/UnityEngine.SharedInternalsModule.dll" }}
+,{ "pid":12345, "tid":1, "ts":1716645930257018, "dur":1096, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/respm/OneDrive/Desktop/hari/HariStation_Data/Managed/UnityEngine.Physics2DModule.dll" }}
+,{ "pid":12345, "tid":1, "ts":1716645930258117, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1716645930258122, "dur":1041, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/respm/OneDrive/Desktop/hari/HariStation_Data/Managed/UnityEngine.Physics2DModule.dll" }}
+,{ "pid":12345, "tid":1, "ts":1716645930259172, "dur":61420, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/respm/OneDrive/Desktop/hari/HariStation_Data/Managed/UnityEngine.NVIDIAModule.dll" }}
+,{ "pid":12345, "tid":1, "ts":1716645930320594, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1716645930320599, "dur":1629, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/respm/OneDrive/Desktop/hari/HariStation_Data/Managed/UnityEngine.NVIDIAModule.dll" }}
+,{ "pid":12345, "tid":1, "ts":1716645930322239, "dur":2016, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/respm/OneDrive/Desktop/hari/HariStation_Data/Managed/Unity.VisualScripting.Core.dll" }}
+,{ "pid":12345, "tid":1, "ts":1716645930324258, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1716645930324273, "dur":1223, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/respm/OneDrive/Desktop/hari/HariStation_Data/Managed/Unity.VisualScripting.Core.dll" }}
+,{ "pid":12345, "tid":1, "ts":1716645930325513, "dur":403, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/respm/OneDrive/Desktop/hari/HariStation_Data/Managed/Unity.RenderPipelines.Universal.Shaders.dll" }}
+,{ "pid":12345, "tid":1, "ts":1716645930325918, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1716645930325924, "dur":2188, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/respm/OneDrive/Desktop/hari/HariStation_Data/Managed/Unity.RenderPipelines.Universal.Shaders.dll" }}
+,{ "pid":12345, "tid":1, "ts":1716645930328124, "dur":224, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/respm/OneDrive/Desktop/hari/HariStation_Data/Managed/Unity.RenderPipelines.Core.ShaderLibrary.dll" }}
+,{ "pid":12345, "tid":1, "ts":1716645930328351, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1716645930328357, "dur":3658, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/respm/OneDrive/Desktop/hari/HariStation_Data/Managed/Unity.RenderPipelines.Core.ShaderLibrary.dll" }}
+,{ "pid":12345, "tid":1, "ts":1716645930332035, "dur":1529, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/respm/OneDrive/Desktop/hari/HariStation_Data/Managed/Unity.Postprocessing.Runtime.dll" }}
+,{ "pid":12345, "tid":1, "ts":1716645930333569, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1716645930333575, "dur":2312, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/respm/OneDrive/Desktop/hari/HariStation_Data/Managed/Unity.Postprocessing.Runtime.dll" }}
+,{ "pid":12345, "tid":1, "ts":1716645930335920, "dur":1392, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/respm/OneDrive/Desktop/hari/HariStation_Data/Managed/Unity.Burst.Unsafe.dll" }}
+,{ "pid":12345, "tid":1, "ts":1716645930337315, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1716645930337321, "dur":823, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/respm/OneDrive/Desktop/hari/HariStation_Data/Managed/Unity.Burst.Unsafe.dll" }}
+,{ "pid":12345, "tid":1, "ts":1716645930338155, "dur":322282, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/respm/OneDrive/Desktop/hari/HariStation_Data/Managed/System.Xml.dll" }}
+,{ "pid":12345, "tid":1, "ts":1716645930660443, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1716645930660453, "dur":4560, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/respm/OneDrive/Desktop/hari/HariStation_Data/Managed/System.Xml.dll" }}
+,{ "pid":12345, "tid":1, "ts":1716645930665030, "dur":2682742, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1716645930167352, "dur":1, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1716645930167353, "dur":2605, "ph":"X", "name": "CheckDagSignatures",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1716645930169963, "dur":1, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"WriteText Library/Bee/artifacts/WinPlayerBuildProgram/Data/app.info" }}
+,{ "pid":12345, "tid":2, "ts":1716645930169968, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1716645930170459, "dur":1549, "ph":"X", "name": "WriteText",  "args": { "detail":"Library/Bee/artifacts/WinPlayerBuildProgram/Data/app.info" }}
+,{ "pid":12345, "tid":2, "ts":1716645930173081, "dur":19, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/respm/OneDrive/Desktop/hari/HariStation_Data/app.info" }}
+,{ "pid":12345, "tid":2, "ts":1716645930173103, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1716645930175245, "dur":2818, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/respm/OneDrive/Desktop/hari/HariStation_Data/app.info" }}
+,{ "pid":12345, "tid":2, "ts":1716645930178067, "dur":375, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/respm/OneDrive/Desktop/hari/MonoBleedingEdge/etc/mono/2.0/DefaultWsdlHelpGenerator.aspx" }}
+,{ "pid":12345, "tid":2, "ts":1716645930178446, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1716645930178612, "dur":1983, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/respm/OneDrive/Desktop/hari/MonoBleedingEdge/etc/mono/2.0/DefaultWsdlHelpGenerator.aspx" }}
+,{ "pid":12345, "tid":2, "ts":1716645930180635, "dur":51751, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/respm/OneDrive/Desktop/hari/HariStation_Data/Managed/UnityEngine.WindModule.dll" }}
+,{ "pid":12345, "tid":2, "ts":1716645930232389, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1716645930232395, "dur":2908, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/respm/OneDrive/Desktop/hari/HariStation_Data/Managed/UnityEngine.WindModule.dll" }}
+,{ "pid":12345, "tid":2, "ts":1716645930235315, "dur":951, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/respm/OneDrive/Desktop/hari/HariStation_Data/Managed/UnityEngine.TextCoreTextEngineModule.dll" }}
+,{ "pid":12345, "tid":2, "ts":1716645930236268, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1716645930236274, "dur":14146, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/respm/OneDrive/Desktop/hari/HariStation_Data/Managed/UnityEngine.TextCoreTextEngineModule.dll" }}
+,{ "pid":12345, "tid":2, "ts":1716645930250433, "dur":67646, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/respm/OneDrive/Desktop/hari/HariStation_Data/Managed/UnityEngine.ScreenCaptureModule.dll" }}
+,{ "pid":12345, "tid":2, "ts":1716645930318089, "dur":5, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1716645930318099, "dur":1630, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/respm/OneDrive/Desktop/hari/HariStation_Data/Managed/UnityEngine.ScreenCaptureModule.dll" }}
+,{ "pid":12345, "tid":2, "ts":1716645930319740, "dur":371, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/respm/OneDrive/Desktop/hari/HariStation_Data/Managed/Unity.VisualScripting.State.dll" }}
+,{ "pid":12345, "tid":2, "ts":1716645930320114, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1716645930320120, "dur":1035, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/respm/OneDrive/Desktop/hari/HariStation_Data/Managed/Unity.VisualScripting.State.dll" }}
+,{ "pid":12345, "tid":2, "ts":1716645930321165, "dur":700, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/respm/OneDrive/Desktop/hari/HariStation_Data/Managed/Unity.VisualScripting.Flow.dll" }}
+,{ "pid":12345, "tid":2, "ts":1716645930321868, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1716645930321887, "dur":1010, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/respm/OneDrive/Desktop/hari/HariStation_Data/Managed/Unity.VisualScripting.Flow.dll" }}
+,{ "pid":12345, "tid":2, "ts":1716645930322908, "dur":519, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/respm/OneDrive/Desktop/hari/HariStation_Data/Managed/Unity.VisualScripting.Antlr3.Runtime.dll" }}
+,{ "pid":12345, "tid":2, "ts":1716645930323430, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1716645930323436, "dur":1008, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/respm/OneDrive/Desktop/hari/HariStation_Data/Managed/Unity.VisualScripting.Antlr3.Runtime.dll" }}
+,{ "pid":12345, "tid":2, "ts":1716645930324458, "dur":630, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/respm/OneDrive/Desktop/hari/HariStation_Data/Managed/Unity.Timeline.dll" }}
+,{ "pid":12345, "tid":2, "ts":1716645930325091, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1716645930325097, "dur":1037, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/respm/OneDrive/Desktop/hari/HariStation_Data/Managed/Unity.Timeline.dll" }}
+,{ "pid":12345, "tid":2, "ts":1716645930326144, "dur":6541, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/respm/OneDrive/Desktop/hari/HariStation_Data/Managed/Unity.RenderPipelines.Universal.Runtime.dll" }}
+,{ "pid":12345, "tid":2, "ts":1716645930332703, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1716645930332709, "dur":1525, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/respm/OneDrive/Desktop/hari/HariStation_Data/Managed/Unity.RenderPipelines.Universal.Runtime.dll" }}
+,{ "pid":12345, "tid":2, "ts":1716645930334246, "dur":215, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/respm/OneDrive/Desktop/hari/HariStation_Data/Managed/Unity.Collections.LowLevel.ILSupport.dll" }}
+,{ "pid":12345, "tid":2, "ts":1716645930334463, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1716645930334468, "dur":1823, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/respm/OneDrive/Desktop/hari/HariStation_Data/Managed/Unity.Collections.LowLevel.ILSupport.dll" }}
+,{ "pid":12345, "tid":2, "ts":1716645930336299, "dur":2131, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/respm/OneDrive/Desktop/hari/HariStation_Data/Managed/Unity.Animation.Rigging.dll" }}
+,{ "pid":12345, "tid":2, "ts":1716645930338433, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1716645930338438, "dur":2323, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/respm/OneDrive/Desktop/hari/HariStation_Data/Managed/Unity.Animation.Rigging.dll" }}
+,{ "pid":12345, "tid":2, "ts":1716645930340771, "dur":1646, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/respm/OneDrive/Desktop/hari/HariStation_Data/Managed/System.Runtime.dll" }}
+,{ "pid":12345, "tid":2, "ts":1716645930342421, "dur":3, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1716645930342430, "dur":767, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/respm/OneDrive/Desktop/hari/HariStation_Data/Managed/System.Runtime.dll" }}
+,{ "pid":12345, "tid":2, "ts":1716645930343207, "dur":203875, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/respm/OneDrive/Desktop/hari/HariStation_Data/Managed/System.Net.Http.dll" }}
+,{ "pid":12345, "tid":2, "ts":1716645930547085, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1716645930547092, "dur":1053, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/respm/OneDrive/Desktop/hari/HariStation_Data/Managed/System.Net.Http.dll" }}
+,{ "pid":12345, "tid":2, "ts":1716645930548155, "dur":2799624, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1716645930168255, "dur":0, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1716645930168255, "dur":1706, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1716645930169963, "dur":49900, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/respm/OneDrive/Desktop/hari/MonoBleedingEdge/etc/mono/mconfig/config.xml" }}
+,{ "pid":12345, "tid":3, "ts":1716645930219866, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1716645930222421, "dur":1463, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/respm/OneDrive/Desktop/hari/MonoBleedingEdge/etc/mono/mconfig/config.xml" }}
+,{ "pid":12345, "tid":3, "ts":1716645930223912, "dur":71808, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/respm/OneDrive/Desktop/hari/HariStation_Data/Managed/UnityEngine.UNETModule.dll" }}
+,{ "pid":12345, "tid":3, "ts":1716645930295724, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1716645930295733, "dur":1165, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/respm/OneDrive/Desktop/hari/HariStation_Data/Managed/UnityEngine.UNETModule.dll" }}
+,{ "pid":12345, "tid":3, "ts":1716645930296909, "dur":20958, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/respm/OneDrive/Desktop/hari/HariStation_Data/Managed/UnityEngine.ClusterRendererModule.dll" }}
+,{ "pid":12345, "tid":3, "ts":1716645930317870, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1716645930317877, "dur":1196, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/respm/OneDrive/Desktop/hari/HariStation_Data/Managed/UnityEngine.ClusterRendererModule.dll" }}
+,{ "pid":12345, "tid":3, "ts":1716645930319085, "dur":195762, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/respm/OneDrive/Desktop/hari/HariStation_Data/Managed/UnityEngine.AccessibilityModule.dll" }}
+,{ "pid":12345, "tid":3, "ts":1716645930514854, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1716645930514864, "dur":1129, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/respm/OneDrive/Desktop/hari/HariStation_Data/Managed/UnityEngine.AccessibilityModule.dll" }}
+,{ "pid":12345, "tid":3, "ts":1716645930516005, "dur":8, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/respm/OneDrive/Desktop/hari/HariStation_Data/level1" }}
+,{ "pid":12345, "tid":3, "ts":1716645930516028, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1716645930516033, "dur":26570, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/respm/OneDrive/Desktop/hari/HariStation_Data/level1" }}
+,{ "pid":12345, "tid":3, "ts":1716645930542620, "dur":14, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/respm/OneDrive/Desktop/hari/HariStation_Data/globalgamemanagers" }}
+,{ "pid":12345, "tid":3, "ts":1716645930542636, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1716645930542641, "dur":7746, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/respm/OneDrive/Desktop/hari/HariStation_Data/globalgamemanagers" }}
+,{ "pid":12345, "tid":3, "ts":1716645930550397, "dur":2797385, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1716645930167480, "dur":0, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1716645930167480, "dur":2684, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1716645930170164, "dur":10320, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/respm/OneDrive/Desktop/hari/MonoBleedingEdge/etc/mono/2.0/web.config" }}
+,{ "pid":12345, "tid":4, "ts":1716645930180488, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1716645930180504, "dur":8073, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/respm/OneDrive/Desktop/hari/MonoBleedingEdge/etc/mono/2.0/web.config" }}
+,{ "pid":12345, "tid":4, "ts":1716645930188620, "dur":33371, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/respm/OneDrive/Desktop/hari/HariStation_Data/Managed/UnityEngine.UnityWebRequestWWWModule.dll" }}
+,{ "pid":12345, "tid":4, "ts":1716645930221994, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1716645930222001, "dur":7553, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/respm/OneDrive/Desktop/hari/HariStation_Data/Managed/UnityEngine.UnityWebRequestWWWModule.dll" }}
+,{ "pid":12345, "tid":4, "ts":1716645930229566, "dur":742, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/respm/OneDrive/Desktop/hari/HariStation_Data/Managed/UnityEngine.UIElementsNativeModule.dll" }}
+,{ "pid":12345, "tid":4, "ts":1716645930230311, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1716645930230317, "dur":2618, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/respm/OneDrive/Desktop/hari/HariStation_Data/Managed/UnityEngine.UIElementsNativeModule.dll" }}
+,{ "pid":12345, "tid":4, "ts":1716645930232942, "dur":24135, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/respm/OneDrive/Desktop/hari/HariStation_Data/Managed/UnityEngine.TLSModule.dll" }}
+,{ "pid":12345, "tid":4, "ts":1716645930257079, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1716645930257085, "dur":1297, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/respm/OneDrive/Desktop/hari/HariStation_Data/Managed/UnityEngine.TLSModule.dll" }}
+,{ "pid":12345, "tid":4, "ts":1716645930258393, "dur":18302, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/respm/OneDrive/Desktop/hari/HariStation_Data/Managed/UnityEngine.PerformanceReportingModule.dll" }}
+,{ "pid":12345, "tid":4, "ts":1716645930276699, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1716645930276705, "dur":1275, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/respm/OneDrive/Desktop/hari/HariStation_Data/Managed/UnityEngine.PerformanceReportingModule.dll" }}
+,{ "pid":12345, "tid":4, "ts":1716645930277992, "dur":54914, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/respm/OneDrive/Desktop/hari/HariStation_Data/Managed/UnityEngine.GameCenterModule.dll" }}
+,{ "pid":12345, "tid":4, "ts":1716645930332909, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1716645930332915, "dur":6731, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/respm/OneDrive/Desktop/hari/HariStation_Data/Managed/UnityEngine.GameCenterModule.dll" }}
+,{ "pid":12345, "tid":4, "ts":1716645930339666, "dur":93941, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/respm/OneDrive/Desktop/hari/HariStation_Data/Managed/System.ServiceModel.Internals.dll" }}
+,{ "pid":12345, "tid":4, "ts":1716645930433610, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1716645930433616, "dur":1029, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/respm/OneDrive/Desktop/hari/HariStation_Data/Managed/System.ServiceModel.Internals.dll" }}
+,{ "pid":12345, "tid":4, "ts":1716645930434656, "dur":740, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/respm/OneDrive/Desktop/hari/HariStation_Data/Managed/Nova.dll" }}
+,{ "pid":12345, "tid":4, "ts":1716645930435398, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1716645930435404, "dur":921, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/respm/OneDrive/Desktop/hari/HariStation_Data/Managed/Nova.dll" }}
+,{ "pid":12345, "tid":4, "ts":1716645930436335, "dur":306, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/respm/OneDrive/Desktop/hari/HariStation_Data/Managed/Nova.Compat.dll" }}
+,{ "pid":12345, "tid":4, "ts":1716645930436644, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1716645930436650, "dur":725, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/respm/OneDrive/Desktop/hari/HariStation_Data/Managed/Nova.Compat.dll" }}
+,{ "pid":12345, "tid":4, "ts":1716645930437385, "dur":463, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/respm/OneDrive/Desktop/hari/HariStation_Data/Managed/netstandard.dll" }}
+,{ "pid":12345, "tid":4, "ts":1716645930437851, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1716645930437857, "dur":661, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/respm/OneDrive/Desktop/hari/HariStation_Data/Managed/netstandard.dll" }}
+,{ "pid":12345, "tid":4, "ts":1716645930438528, "dur":4512, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/respm/OneDrive/Desktop/hari/HariStation_Data/Managed/mscorlib.dll" }}
+,{ "pid":12345, "tid":4, "ts":1716645930443045, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1716645930443053, "dur":2020, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/respm/OneDrive/Desktop/hari/HariStation_Data/Managed/mscorlib.dll" }}
+,{ "pid":12345, "tid":4, "ts":1716645930445091, "dur":728, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/respm/OneDrive/Desktop/hari/HariStation_Data/Managed/Cinemachine.dll" }}
+,{ "pid":12345, "tid":4, "ts":1716645930445822, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1716645930445828, "dur":908, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/respm/OneDrive/Desktop/hari/HariStation_Data/Managed/Cinemachine.dll" }}
+,{ "pid":12345, "tid":4, "ts":1716645930446748, "dur":1011, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/respm/OneDrive/Desktop/hari/HariStation_Data/Managed/Assembly-CSharp.dll" }}
+,{ "pid":12345, "tid":4, "ts":1716645930447762, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1716645930447768, "dur":784, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/respm/OneDrive/Desktop/hari/HariStation_Data/Managed/Assembly-CSharp.dll" }}
+,{ "pid":12345, "tid":4, "ts":1716645930448561, "dur":16280, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/respm/OneDrive/Desktop/hari/HariStation_Data/Plugins/x86_64/lib_burst_generated.dll" }}
+,{ "pid":12345, "tid":4, "ts":1716645930464846, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1716645930465271, "dur":999, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/respm/OneDrive/Desktop/hari/HariStation_Data/Plugins/x86_64/lib_burst_generated.dll" }}
+,{ "pid":12345, "tid":4, "ts":1716645930466284, "dur":8, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/respm/OneDrive/Desktop/hari/HariStation_Data/Resources/unity_builtin_extra" }}
+,{ "pid":12345, "tid":4, "ts":1716645930466294, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1716645930466322, "dur":818, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/respm/OneDrive/Desktop/hari/HariStation_Data/Resources/unity_builtin_extra" }}
+,{ "pid":12345, "tid":4, "ts":1716645930467151, "dur":7, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/respm/OneDrive/Desktop/hari/HariStation_Data/sharedassets1.resource" }}
+,{ "pid":12345, "tid":4, "ts":1716645930467160, "dur":4, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1716645930467168, "dur":781, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/respm/OneDrive/Desktop/hari/HariStation_Data/sharedassets1.resource" }}
+,{ "pid":12345, "tid":4, "ts":1716645930467958, "dur":7, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/respm/OneDrive/Desktop/hari/HariStation_Data/sharedassets1.assets.resS" }}
+,{ "pid":12345, "tid":4, "ts":1716645930467967, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1716645930467971, "dur":2879723, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/respm/OneDrive/Desktop/hari/HariStation_Data/sharedassets1.assets.resS" }}
+,{ "pid":12345, "tid":4, "ts":1716645933347708, "dur":1, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"Player" }}
+,{ "pid":12345, "tid":4, "ts":1716645933347710, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1716645930167636, "dur":0, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1716645930167636, "dur":2500, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1716645930170137, "dur":680, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/respm/OneDrive/Desktop/hari/MonoBleedingEdge/etc/mono/4.0/DefaultWsdlHelpGenerator.aspx" }}
+,{ "pid":12345, "tid":5, "ts":1716645930170819, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1716645930175623, "dur":3566, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/respm/OneDrive/Desktop/hari/MonoBleedingEdge/etc/mono/4.0/DefaultWsdlHelpGenerator.aspx" }}
+,{ "pid":12345, "tid":5, "ts":1716645930179233, "dur":43724, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/respm/OneDrive/Desktop/hari/MonoBleedingEdge/EmbedRuntime/mono-2.0-bdwgc.dll" }}
+,{ "pid":12345, "tid":5, "ts":1716645930222960, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1716645930223021, "dur":5821, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/respm/OneDrive/Desktop/hari/MonoBleedingEdge/EmbedRuntime/mono-2.0-bdwgc.dll" }}
+,{ "pid":12345, "tid":5, "ts":1716645930228876, "dur":23524, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/respm/OneDrive/Desktop/hari/HariStation_Data/Managed/UnityEngine.UmbraModule.dll" }}
+,{ "pid":12345, "tid":5, "ts":1716645930252405, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1716645930252414, "dur":4194, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/respm/OneDrive/Desktop/hari/HariStation_Data/Managed/UnityEngine.UmbraModule.dll" }}
+,{ "pid":12345, "tid":5, "ts":1716645930256619, "dur":40118, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/respm/OneDrive/Desktop/hari/HariStation_Data/Managed/UnityEngine.ProfilerModule.dll" }}
+,{ "pid":12345, "tid":5, "ts":1716645930296823, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1716645930296831, "dur":27990, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/respm/OneDrive/Desktop/hari/HariStation_Data/Managed/UnityEngine.ProfilerModule.dll" }}
+,{ "pid":12345, "tid":5, "ts":1716645930324831, "dur":946, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/respm/OneDrive/Desktop/hari/HariStation_Data/Managed/Unity.TextMeshPro.dll" }}
+,{ "pid":12345, "tid":5, "ts":1716645930325780, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1716645930325786, "dur":2222, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/respm/OneDrive/Desktop/hari/HariStation_Data/Managed/Unity.TextMeshPro.dll" }}
+,{ "pid":12345, "tid":5, "ts":1716645930328021, "dur":329, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/respm/OneDrive/Desktop/hari/HariStation_Data/Managed/Unity.RenderPipelines.ShaderGraph.ShaderGraphLibrary.dll" }}
+,{ "pid":12345, "tid":5, "ts":1716645930328353, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1716645930328358, "dur":1521, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/respm/OneDrive/Desktop/hari/HariStation_Data/Managed/Unity.RenderPipelines.ShaderGraph.ShaderGraphLibrary.dll" }}
+,{ "pid":12345, "tid":5, "ts":1716645930329891, "dur":905, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/respm/OneDrive/Desktop/hari/HariStation_Data/Managed/Unity.RenderPipeline.Universal.ShaderLibrary.dll" }}
+,{ "pid":12345, "tid":5, "ts":1716645930330799, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1716645930330804, "dur":2801, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/respm/OneDrive/Desktop/hari/HariStation_Data/Managed/Unity.RenderPipeline.Universal.ShaderLibrary.dll" }}
+,{ "pid":12345, "tid":5, "ts":1716645930333616, "dur":1626, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/respm/OneDrive/Desktop/hari/HariStation_Data/Managed/Unity.InputSystem.dll" }}
+,{ "pid":12345, "tid":5, "ts":1716645930335245, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1716645930335251, "dur":1885, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/respm/OneDrive/Desktop/hari/HariStation_Data/Managed/Unity.InputSystem.dll" }}
+,{ "pid":12345, "tid":5, "ts":1716645930337147, "dur":94503, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/respm/OneDrive/Desktop/hari/HariStation_Data/Managed/System.Xml.Linq.dll" }}
+,{ "pid":12345, "tid":5, "ts":1716645930431654, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1716645930431661, "dur":1077, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/respm/OneDrive/Desktop/hari/HariStation_Data/Managed/System.Xml.Linq.dll" }}
+,{ "pid":12345, "tid":5, "ts":1716645930432749, "dur":530, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/respm/OneDrive/Desktop/hari/HariStation_Data/Managed/Nova.UIControls.dll" }}
+,{ "pid":12345, "tid":5, "ts":1716645930433282, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1716645930433288, "dur":1049, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/respm/OneDrive/Desktop/hari/HariStation_Data/Managed/Nova.UIControls.dll" }}
+,{ "pid":12345, "tid":5, "ts":1716645930434348, "dur":9224, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/respm/OneDrive/Desktop/hari/HariStation_Data/Managed/Nova.Internal.dll" }}
+,{ "pid":12345, "tid":5, "ts":1716645930443575, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1716645930443582, "dur":1049, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/respm/OneDrive/Desktop/hari/HariStation_Data/Managed/Nova.Internal.dll" }}
+,{ "pid":12345, "tid":5, "ts":1716645930444644, "dur":319336, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/respm/OneDrive/Desktop/hari/HariStation_Data/Managed/Mono.Security.dll" }}
+,{ "pid":12345, "tid":5, "ts":1716645930763984, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1716645930763991, "dur":2154, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/respm/OneDrive/Desktop/hari/HariStation_Data/Managed/Mono.Security.dll" }}
+,{ "pid":12345, "tid":5, "ts":1716645930766156, "dur":2581609, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1716645930167673, "dur":0, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1716645930167673, "dur":2448, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1716645930170121, "dur":14165, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/respm/OneDrive/Desktop/hari/MonoBleedingEdge/etc/mono/4.0/machine.config" }}
+,{ "pid":12345, "tid":6, "ts":1716645930184290, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1716645930184304, "dur":4497, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/respm/OneDrive/Desktop/hari/MonoBleedingEdge/etc/mono/4.0/machine.config" }}
+,{ "pid":12345, "tid":6, "ts":1716645930188839, "dur":31089, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/respm/OneDrive/Desktop/hari/HariStation_Data/Managed/UnityEngine.UnityWebRequestTextureModule.dll" }}
+,{ "pid":12345, "tid":6, "ts":1716645930219946, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1716645930219952, "dur":1541, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/respm/OneDrive/Desktop/hari/HariStation_Data/Managed/UnityEngine.UnityWebRequestTextureModule.dll" }}
+,{ "pid":12345, "tid":6, "ts":1716645930221507, "dur":70183, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/respm/OneDrive/Desktop/hari/HariStation_Data/Managed/UnityEngine.UnityAnalyticsModule.dll" }}
+,{ "pid":12345, "tid":6, "ts":1716645930291696, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1716645930291705, "dur":946, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/respm/OneDrive/Desktop/hari/HariStation_Data/Managed/UnityEngine.UnityAnalyticsModule.dll" }}
+,{ "pid":12345, "tid":6, "ts":1716645930292664, "dur":3558, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/respm/OneDrive/Desktop/hari/HariStation_Data/Managed/UnityEngine.DirectorModule.dll" }}
+,{ "pid":12345, "tid":6, "ts":1716645930296225, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1716645930296230, "dur":1088, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/respm/OneDrive/Desktop/hari/HariStation_Data/Managed/UnityEngine.DirectorModule.dll" }}
+,{ "pid":12345, "tid":6, "ts":1716645930297327, "dur":20330, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/respm/OneDrive/Desktop/hari/HariStation_Data/Managed/UnityEngine.ClusterInputModule.dll" }}
+,{ "pid":12345, "tid":6, "ts":1716645930317667, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1716645930317677, "dur":896, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/respm/OneDrive/Desktop/hari/HariStation_Data/Managed/UnityEngine.ClusterInputModule.dll" }}
+,{ "pid":12345, "tid":6, "ts":1716645930318584, "dur":13139, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/respm/OneDrive/Desktop/hari/HariStation_Data/Managed/UnityEngine.AIModule.dll" }}
+,{ "pid":12345, "tid":6, "ts":1716645930331727, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1716645930331732, "dur":1244, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/respm/OneDrive/Desktop/hari/HariStation_Data/Managed/UnityEngine.AIModule.dll" }}
+,{ "pid":12345, "tid":6, "ts":1716645930332987, "dur":212, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/respm/OneDrive/Desktop/hari/HariStation_Data/Managed/Unity.InputSystem.ForUI.dll" }}
+,{ "pid":12345, "tid":6, "ts":1716645930333202, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1716645930333207, "dur":1115, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/respm/OneDrive/Desktop/hari/HariStation_Data/Managed/Unity.InputSystem.ForUI.dll" }}
+,{ "pid":12345, "tid":6, "ts":1716645930334333, "dur":1549, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/respm/OneDrive/Desktop/hari/HariStation_Data/Managed/Unity.Collections.dll" }}
+,{ "pid":12345, "tid":6, "ts":1716645930335885, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1716645930335891, "dur":2426, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/respm/OneDrive/Desktop/hari/HariStation_Data/Managed/Unity.Collections.dll" }}
+,{ "pid":12345, "tid":6, "ts":1716645930338328, "dur":50338, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/respm/OneDrive/Desktop/hari/HariStation_Data/Managed/System.Transactions.dll" }}
+,{ "pid":12345, "tid":6, "ts":1716645930388670, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1716645930388678, "dur":1043, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/respm/OneDrive/Desktop/hari/HariStation_Data/Managed/System.Transactions.dll" }}
+,{ "pid":12345, "tid":6, "ts":1716645930389734, "dur":180189, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/respm/OneDrive/Desktop/hari/HariStation_Data/Managed/System.Drawing.dll" }}
+,{ "pid":12345, "tid":6, "ts":1716645930569927, "dur":7, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1716645930569949, "dur":1230, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/respm/OneDrive/Desktop/hari/HariStation_Data/Managed/System.Drawing.dll" }}
+,{ "pid":12345, "tid":6, "ts":1716645930571196, "dur":2776566, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1716645930167728, "dur":0, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1716645930167728, "dur":2375, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1716645930170103, "dur":629, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/respm/OneDrive/Desktop/hari/MonoBleedingEdge/etc/mono/4.0/settings.map" }}
+,{ "pid":12345, "tid":7, "ts":1716645930170734, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1716645930175380, "dur":3623, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/respm/OneDrive/Desktop/hari/MonoBleedingEdge/etc/mono/4.0/settings.map" }}
+,{ "pid":12345, "tid":7, "ts":1716645930179065, "dur":109, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/respm/OneDrive/Desktop/hari/MonoBleedingEdge/etc/mono/browscap.ini" }}
+,{ "pid":12345, "tid":7, "ts":1716645930179178, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1716645930179186, "dur":2097, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/respm/OneDrive/Desktop/hari/MonoBleedingEdge/etc/mono/browscap.ini" }}
+,{ "pid":12345, "tid":7, "ts":1716645930181318, "dur":414, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/respm/OneDrive/Desktop/hari/HariStation_Data/Managed/UnityEngine.VRModule.dll" }}
+,{ "pid":12345, "tid":7, "ts":1716645930181736, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1716645930183241, "dur":2633, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/respm/OneDrive/Desktop/hari/HariStation_Data/Managed/UnityEngine.VRModule.dll" }}
+,{ "pid":12345, "tid":7, "ts":1716645930185888, "dur":50556, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/respm/OneDrive/Desktop/hari/HariStation_Data/Managed/UnityEngine.VideoModule.dll" }}
+,{ "pid":12345, "tid":7, "ts":1716645930236446, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1716645930236476, "dur":1280, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/respm/OneDrive/Desktop/hari/HariStation_Data/Managed/UnityEngine.VideoModule.dll" }}
+,{ "pid":12345, "tid":7, "ts":1716645930237767, "dur":383, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/respm/OneDrive/Desktop/hari/HariStation_Data/Managed/UnityEngine.SubsystemsModule.dll" }}
+,{ "pid":12345, "tid":7, "ts":1716645930238152, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1716645930238168, "dur":677, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/respm/OneDrive/Desktop/hari/HariStation_Data/Managed/UnityEngine.SubsystemsModule.dll" }}
+,{ "pid":12345, "tid":7, "ts":1716645930238853, "dur":348, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/respm/OneDrive/Desktop/hari/HariStation_Data/Managed/UnityEngine.SpriteShapeModule.dll" }}
+,{ "pid":12345, "tid":7, "ts":1716645930239204, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1716645930239209, "dur":795, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/respm/OneDrive/Desktop/hari/HariStation_Data/Managed/UnityEngine.SpriteShapeModule.dll" }}
+,{ "pid":12345, "tid":7, "ts":1716645930240012, "dur":28915, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/respm/OneDrive/Desktop/hari/HariStation_Data/Managed/UnityEngine.SpriteMaskModule.dll" }}
+,{ "pid":12345, "tid":7, "ts":1716645930268932, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1716645930268949, "dur":1023, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/respm/OneDrive/Desktop/hari/HariStation_Data/Managed/UnityEngine.SpriteMaskModule.dll" }}
+,{ "pid":12345, "tid":7, "ts":1716645930269988, "dur":392, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/respm/OneDrive/Desktop/hari/HariStation_Data/Managed/UnityEngine.JSONSerializeModule.dll" }}
+,{ "pid":12345, "tid":7, "ts":1716645930270383, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1716645930270389, "dur":836, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/respm/OneDrive/Desktop/hari/HariStation_Data/Managed/UnityEngine.JSONSerializeModule.dll" }}
+,{ "pid":12345, "tid":7, "ts":1716645930271239, "dur":459, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/respm/OneDrive/Desktop/hari/HariStation_Data/Managed/UnityEngine.InputModule.dll" }}
+,{ "pid":12345, "tid":7, "ts":1716645930271701, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1716645930271708, "dur":756, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/respm/OneDrive/Desktop/hari/HariStation_Data/Managed/UnityEngine.InputModule.dll" }}
+,{ "pid":12345, "tid":7, "ts":1716645930272474, "dur":355, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/respm/OneDrive/Desktop/hari/HariStation_Data/Managed/UnityEngine.InputLegacyModule.dll" }}
+,{ "pid":12345, "tid":7, "ts":1716645930272832, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1716645930272838, "dur":1746, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/respm/OneDrive/Desktop/hari/HariStation_Data/Managed/UnityEngine.InputLegacyModule.dll" }}
+,{ "pid":12345, "tid":7, "ts":1716645930274596, "dur":1041, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/respm/OneDrive/Desktop/hari/HariStation_Data/Managed/UnityEngine.IMGUIModule.dll" }}
+,{ "pid":12345, "tid":7, "ts":1716645930275640, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1716645930275649, "dur":1134, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/respm/OneDrive/Desktop/hari/HariStation_Data/Managed/UnityEngine.IMGUIModule.dll" }}
+,{ "pid":12345, "tid":7, "ts":1716645930276795, "dur":375, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/respm/OneDrive/Desktop/hari/HariStation_Data/Managed/UnityEngine.GridModule.dll" }}
+,{ "pid":12345, "tid":7, "ts":1716645930277190, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1716645930277196, "dur":942, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/respm/OneDrive/Desktop/hari/HariStation_Data/Managed/UnityEngine.GridModule.dll" }}
+,{ "pid":12345, "tid":7, "ts":1716645930278155, "dur":49950, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/respm/OneDrive/Desktop/hari/HariStation_Data/Managed/UnityEngine.DSPGraphModule.dll" }}
+,{ "pid":12345, "tid":7, "ts":1716645930328109, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1716645930328116, "dur":1111, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/respm/OneDrive/Desktop/hari/HariStation_Data/Managed/UnityEngine.DSPGraphModule.dll" }}
+,{ "pid":12345, "tid":7, "ts":1716645930329239, "dur":1157, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/respm/OneDrive/Desktop/hari/HariStation_Data/Managed/Unity.RenderPipelines.Core.Runtime.dll" }}
+,{ "pid":12345, "tid":7, "ts":1716645930330399, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1716645930330405, "dur":1819, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/respm/OneDrive/Desktop/hari/HariStation_Data/Managed/Unity.RenderPipelines.Core.Runtime.dll" }}
+,{ "pid":12345, "tid":7, "ts":1716645930332235, "dur":2158, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/respm/OneDrive/Desktop/hari/HariStation_Data/Managed/Unity.Mathematics.dll" }}
+,{ "pid":12345, "tid":7, "ts":1716645930334396, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1716645930334401, "dur":1872, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/respm/OneDrive/Desktop/hari/HariStation_Data/Managed/Unity.Mathematics.dll" }}
+,{ "pid":12345, "tid":7, "ts":1716645930336283, "dur":1869, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/respm/OneDrive/Desktop/hari/HariStation_Data/Managed/Unity.Burst.dll" }}
+,{ "pid":12345, "tid":7, "ts":1716645930338175, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1716645930338181, "dur":2520, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/respm/OneDrive/Desktop/hari/HariStation_Data/Managed/Unity.Burst.dll" }}
+,{ "pid":12345, "tid":7, "ts":1716645930340715, "dur":232753, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/respm/OneDrive/Desktop/hari/HariStation_Data/Managed/System.Security.dll" }}
+,{ "pid":12345, "tid":7, "ts":1716645930573473, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1716645930573483, "dur":1143, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/respm/OneDrive/Desktop/hari/HariStation_Data/Managed/System.Security.dll" }}
+,{ "pid":12345, "tid":7, "ts":1716645930574643, "dur":2773124, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1716645930167809, "dur":1, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1716645930167810, "dur":2278, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1716645930170088, "dur":12518, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/respm/OneDrive/Desktop/hari/MonoBleedingEdge/etc/mono/4.0/web.config" }}
+,{ "pid":12345, "tid":8, "ts":1716645930182609, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1716645930182687, "dur":1962, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/respm/OneDrive/Desktop/hari/MonoBleedingEdge/etc/mono/4.0/web.config" }}
+,{ "pid":12345, "tid":8, "ts":1716645930184683, "dur":45159, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/respm/OneDrive/Desktop/hari/HariStation_Data/Managed/UnityEngine.VirtualTexturingModule.dll" }}
+,{ "pid":12345, "tid":8, "ts":1716645930229845, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1716645930229867, "dur":8584, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/respm/OneDrive/Desktop/hari/HariStation_Data/Managed/UnityEngine.VirtualTexturingModule.dll" }}
+,{ "pid":12345, "tid":8, "ts":1716645930238462, "dur":33381, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/respm/OneDrive/Desktop/hari/HariStation_Data/Managed/UnityEngine.StreamingModule.dll" }}
+,{ "pid":12345, "tid":8, "ts":1716645930271846, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1716645930271852, "dur":2920, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/respm/OneDrive/Desktop/hari/HariStation_Data/Managed/UnityEngine.StreamingModule.dll" }}
+,{ "pid":12345, "tid":8, "ts":1716645930274785, "dur":20955, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/respm/OneDrive/Desktop/hari/HariStation_Data/Managed/UnityEngine.ImageConversionModule.dll" }}
+,{ "pid":12345, "tid":8, "ts":1716645930295744, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1716645930295751, "dur":1111, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/respm/OneDrive/Desktop/hari/HariStation_Data/Managed/UnityEngine.ImageConversionModule.dll" }}
+,{ "pid":12345, "tid":8, "ts":1716645930296874, "dur":3077, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/respm/OneDrive/Desktop/hari/HariStation_Data/Managed/UnityEngine.CoreModule.dll" }}
+,{ "pid":12345, "tid":8, "ts":1716645930299955, "dur":3, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1716645930299964, "dur":4041, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/respm/OneDrive/Desktop/hari/HariStation_Data/Managed/UnityEngine.CoreModule.dll" }}
+,{ "pid":12345, "tid":8, "ts":1716645930304017, "dur":242517, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/respm/OneDrive/Desktop/hari/HariStation_Data/Managed/UnityEngine.AssetBundleModule.dll" }}
+,{ "pid":12345, "tid":8, "ts":1716645930546540, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1716645930546550, "dur":1193, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/respm/OneDrive/Desktop/hari/HariStation_Data/Managed/UnityEngine.AssetBundleModule.dll" }}
+,{ "pid":12345, "tid":8, "ts":1716645930547764, "dur":140, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/respm/OneDrive/Desktop/hari/HariStation_Data/boot.config" }}
+,{ "pid":12345, "tid":8, "ts":1716645930547907, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1716645930547912, "dur":795, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/respm/OneDrive/Desktop/hari/HariStation_Data/boot.config" }}
+,{ "pid":12345, "tid":8, "ts":1716645930548716, "dur":2799060, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":9, "ts":1716645930167920, "dur":0, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":9, "ts":1716645930167920, "dur":2155, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":9, "ts":1716645930170075, "dur":719, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/respm/OneDrive/Desktop/hari/MonoBleedingEdge/etc/mono/4.0/Browsers/Compat.browser" }}
+,{ "pid":12345, "tid":9, "ts":1716645930170796, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":9, "ts":1716645930175763, "dur":3297, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/respm/OneDrive/Desktop/hari/MonoBleedingEdge/etc/mono/4.0/Browsers/Compat.browser" }}
+,{ "pid":12345, "tid":9, "ts":1716645930179118, "dur":5597, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/respm/OneDrive/Desktop/hari/MonoBleedingEdge/EmbedRuntime/MonoPosixHelper.dll" }}
+,{ "pid":12345, "tid":9, "ts":1716645930184719, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":9, "ts":1716645930185428, "dur":2668, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/respm/OneDrive/Desktop/hari/MonoBleedingEdge/EmbedRuntime/MonoPosixHelper.dll" }}
+,{ "pid":12345, "tid":9, "ts":1716645930188132, "dur":31375, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/respm/OneDrive/Desktop/hari/HariStation_Data/Managed/UnityEngine.VehiclesModule.dll" }}
+,{ "pid":12345, "tid":9, "ts":1716645930219511, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":9, "ts":1716645930219517, "dur":2131, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/respm/OneDrive/Desktop/hari/HariStation_Data/Managed/UnityEngine.VehiclesModule.dll" }}
+,{ "pid":12345, "tid":9, "ts":1716645930221657, "dur":23438, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/respm/OneDrive/Desktop/hari/HariStation_Data/Managed/UnityEngine.UnityAnalyticsCommonModule.dll" }}
+,{ "pid":12345, "tid":9, "ts":1716645930245100, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":9, "ts":1716645930245108, "dur":10689, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/respm/OneDrive/Desktop/hari/HariStation_Data/Managed/UnityEngine.UnityAnalyticsCommonModule.dll" }}
+,{ "pid":12345, "tid":9, "ts":1716645930255813, "dur":20877, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/respm/OneDrive/Desktop/hari/HariStation_Data/Managed/UnityEngine.RuntimeInitializeOnLoadManagerInitializerModule.dll" }}
+,{ "pid":12345, "tid":9, "ts":1716645930276694, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":9, "ts":1716645930276702, "dur":890, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/respm/OneDrive/Desktop/hari/HariStation_Data/Managed/UnityEngine.RuntimeInitializeOnLoadManagerInitializerModule.dll" }}
+,{ "pid":12345, "tid":9, "ts":1716645930277604, "dur":19042, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/respm/OneDrive/Desktop/hari/HariStation_Data/Managed/UnityEngine.GIModule.dll" }}
+,{ "pid":12345, "tid":9, "ts":1716645930296677, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":9, "ts":1716645930296682, "dur":6630, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/respm/OneDrive/Desktop/hari/HariStation_Data/Managed/UnityEngine.GIModule.dll" }}
+,{ "pid":12345, "tid":9, "ts":1716645930303331, "dur":43396, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/respm/OneDrive/Desktop/hari/HariStation_Data/Managed/UnityEngine.ClothModule.dll" }}
+,{ "pid":12345, "tid":9, "ts":1716645930346731, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":9, "ts":1716645930346738, "dur":761, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/respm/OneDrive/Desktop/hari/HariStation_Data/Managed/UnityEngine.ClothModule.dll" }}
+,{ "pid":12345, "tid":9, "ts":1716645930347510, "dur":152284, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/respm/OneDrive/Desktop/hari/HariStation_Data/Managed/System.EnterpriseServices.dll" }}
+,{ "pid":12345, "tid":9, "ts":1716645930499799, "dur":3, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":9, "ts":1716645930499809, "dur":1139, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/respm/OneDrive/Desktop/hari/HariStation_Data/Managed/System.EnterpriseServices.dll" }}
+,{ "pid":12345, "tid":9, "ts":1716645930500963, "dur":9, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/respm/OneDrive/Desktop/hari/HariStation_Data/sharedassets0.assets" }}
+,{ "pid":12345, "tid":9, "ts":1716645930500974, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":9, "ts":1716645930500979, "dur":731, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/respm/OneDrive/Desktop/hari/HariStation_Data/sharedassets0.assets" }}
+,{ "pid":12345, "tid":9, "ts":1716645930501720, "dur":253, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/respm/OneDrive/Desktop/hari/HariStation_Data/ScriptingAssemblies.json" }}
+,{ "pid":12345, "tid":9, "ts":1716645930501976, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":9, "ts":1716645930501981, "dur":671, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/respm/OneDrive/Desktop/hari/HariStation_Data/ScriptingAssemblies.json" }}
+,{ "pid":12345, "tid":9, "ts":1716645930502661, "dur":7594, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/respm/OneDrive/Desktop/hari/HariStation_Data/RuntimeInitializeOnLoads.json" }}
+,{ "pid":12345, "tid":9, "ts":1716645930510259, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":9, "ts":1716645930510265, "dur":1041, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/respm/OneDrive/Desktop/hari/HariStation_Data/RuntimeInitializeOnLoads.json" }}
+,{ "pid":12345, "tid":9, "ts":1716645930511319, "dur":8, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/respm/OneDrive/Desktop/hari/HariStation_Data/resources.assets" }}
+,{ "pid":12345, "tid":9, "ts":1716645930511328, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":9, "ts":1716645930511333, "dur":23430, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/respm/OneDrive/Desktop/hari/HariStation_Data/resources.assets" }}
+,{ "pid":12345, "tid":9, "ts":1716645930534775, "dur":8, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/respm/OneDrive/Desktop/hari/HariStation_Data/globalgamemanagers.assets.resS" }}
+,{ "pid":12345, "tid":9, "ts":1716645930534785, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":9, "ts":1716645930534790, "dur":15542, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/respm/OneDrive/Desktop/hari/HariStation_Data/globalgamemanagers.assets.resS" }}
+,{ "pid":12345, "tid":9, "ts":1716645930550345, "dur":2797412, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":10, "ts":1716645930167969, "dur":0, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":10, "ts":1716645930167969, "dur":2332, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":10, "ts":1716645930170302, "dur":10513, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/respm/OneDrive/Desktop/hari/MonoBleedingEdge/etc/mono/2.0/machine.config" }}
+,{ "pid":12345, "tid":10, "ts":1716645930180819, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":10, "ts":1716645930180834, "dur":8436, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/respm/OneDrive/Desktop/hari/MonoBleedingEdge/etc/mono/2.0/machine.config" }}
+,{ "pid":12345, "tid":10, "ts":1716645930189301, "dur":32780, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/respm/OneDrive/Desktop/hari/HariStation_Data/Managed/UnityEngine.UnityWebRequestAudioModule.dll" }}
+,{ "pid":12345, "tid":10, "ts":1716645930222084, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":10, "ts":1716645930222091, "dur":7448, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/respm/OneDrive/Desktop/hari/HariStation_Data/Managed/UnityEngine.UnityWebRequestAudioModule.dll" }}
+,{ "pid":12345, "tid":10, "ts":1716645930229554, "dur":1355, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/respm/OneDrive/Desktop/hari/HariStation_Data/Managed/UnityEngine.UIModule.dll" }}
+,{ "pid":12345, "tid":10, "ts":1716645930230912, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":10, "ts":1716645930230918, "dur":2308, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/respm/OneDrive/Desktop/hari/HariStation_Data/Managed/UnityEngine.UIModule.dll" }}
+,{ "pid":12345, "tid":10, "ts":1716645930233532, "dur":1562, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/respm/OneDrive/Desktop/hari/HariStation_Data/Managed/UnityEngine.TilemapModule.dll" }}
+,{ "pid":12345, "tid":10, "ts":1716645930235097, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":10, "ts":1716645930235103, "dur":1761, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/respm/OneDrive/Desktop/hari/HariStation_Data/Managed/UnityEngine.TilemapModule.dll" }}
+,{ "pid":12345, "tid":10, "ts":1716645930236882, "dur":40211, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/respm/OneDrive/Desktop/hari/HariStation_Data/Managed/UnityEngine.TerrainPhysicsModule.dll" }}
+,{ "pid":12345, "tid":10, "ts":1716645930277096, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":10, "ts":1716645930277189, "dur":2039, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/respm/OneDrive/Desktop/hari/HariStation_Data/Managed/UnityEngine.TerrainPhysicsModule.dll" }}
+,{ "pid":12345, "tid":10, "ts":1716645930279241, "dur":49429, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/respm/OneDrive/Desktop/hari/HariStation_Data/Managed/UnityEngine.dll" }}
+,{ "pid":12345, "tid":10, "ts":1716645930328672, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":10, "ts":1716645930328677, "dur":12028, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/respm/OneDrive/Desktop/hari/HariStation_Data/Managed/UnityEngine.dll" }}
+,{ "pid":12345, "tid":10, "ts":1716645930340718, "dur":328656, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/respm/OneDrive/Desktop/hari/HariStation_Data/Managed/System.Runtime.Serialization.dll" }}
+,{ "pid":12345, "tid":10, "ts":1716645930669379, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":10, "ts":1716645930669388, "dur":6051, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/respm/OneDrive/Desktop/hari/HariStation_Data/Managed/System.Runtime.Serialization.dll" }}
+,{ "pid":12345, "tid":10, "ts":1716645930675470, "dur":2672305, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":11, "ts":1716645930167998, "dur":1, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":11, "ts":1716645930167999, "dur":2193, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":11, "ts":1716645930170192, "dur":1422, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/respm/OneDrive/Desktop/hari/MonoBleedingEdge/etc/mono/2.0/settings.map" }}
+,{ "pid":12345, "tid":11, "ts":1716645930171618, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":11, "ts":1716645930175888, "dur":3615, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/respm/OneDrive/Desktop/hari/MonoBleedingEdge/etc/mono/2.0/settings.map" }}
+,{ "pid":12345, "tid":11, "ts":1716645930179546, "dur":75211, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/respm/OneDrive/Desktop/hari/HariStation.exe" }}
+,{ "pid":12345, "tid":11, "ts":1716645930254761, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":11, "ts":1716645930254766, "dur":21077, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/respm/OneDrive/Desktop/hari/HariStation.exe" }}
+,{ "pid":12345, "tid":11, "ts":1716645930275876, "dur":20749, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/respm/OneDrive/Desktop/hari/HariStation_Data/Managed/UnityEngine.HotReloadModule.dll" }}
+,{ "pid":12345, "tid":11, "ts":1716645930296674, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":11, "ts":1716645930296681, "dur":6707, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/respm/OneDrive/Desktop/hari/HariStation_Data/Managed/UnityEngine.HotReloadModule.dll" }}
+,{ "pid":12345, "tid":11, "ts":1716645930303427, "dur":2011, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/respm/OneDrive/Desktop/hari/HariStation_Data/Managed/UnityEngine.AudioModule.dll" }}
+,{ "pid":12345, "tid":11, "ts":1716645930305441, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":11, "ts":1716645930305449, "dur":1024, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/respm/OneDrive/Desktop/hari/HariStation_Data/Managed/UnityEngine.AudioModule.dll" }}
+,{ "pid":12345, "tid":11, "ts":1716645930306484, "dur":34311, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/respm/OneDrive/Desktop/hari/HariStation_Data/Managed/UnityEngine.ARModule.dll" }}
+,{ "pid":12345, "tid":11, "ts":1716645930340797, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":11, "ts":1716645930340806, "dur":57700, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/respm/OneDrive/Desktop/hari/HariStation_Data/Managed/UnityEngine.ARModule.dll" }}
+,{ "pid":12345, "tid":11, "ts":1716645930398521, "dur":4328, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/respm/OneDrive/Desktop/hari/HariStation_Data/Managed/System.dll" }}
+,{ "pid":12345, "tid":11, "ts":1716645930402903, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":11, "ts":1716645930402911, "dur":1578, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/respm/OneDrive/Desktop/hari/HariStation_Data/Managed/System.dll" }}
+,{ "pid":12345, "tid":11, "ts":1716645930404504, "dur":193463, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/respm/OneDrive/Desktop/hari/HariStation_Data/Managed/System.Data.dll" }}
+,{ "pid":12345, "tid":11, "ts":1716645930597972, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":11, "ts":1716645930597981, "dur":1885, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/respm/OneDrive/Desktop/hari/HariStation_Data/Managed/System.Data.dll" }}
+,{ "pid":12345, "tid":11, "ts":1716645930599881, "dur":2747889, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":12, "ts":1716645930168021, "dur":0, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":12, "ts":1716645930168021, "dur":2031, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":12, "ts":1716645930170052, "dur":793, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/respm/OneDrive/Desktop/hari/MonoBleedingEdge/etc/mono/4.5/DefaultWsdlHelpGenerator.aspx" }}
+,{ "pid":12345, "tid":12, "ts":1716645930170847, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":12, "ts":1716645930175534, "dur":3771, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/respm/OneDrive/Desktop/hari/MonoBleedingEdge/etc/mono/4.5/DefaultWsdlHelpGenerator.aspx" }}
+,{ "pid":12345, "tid":12, "ts":1716645930179366, "dur":146636, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/respm/OneDrive/Desktop/hari/UnityPlayer.dll" }}
+,{ "pid":12345, "tid":12, "ts":1716645930326004, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":12, "ts":1716645930326009, "dur":16830, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/respm/OneDrive/Desktop/hari/UnityPlayer.dll" }}
+,{ "pid":12345, "tid":12, "ts":1716645930342871, "dur":80147, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/respm/OneDrive/Desktop/hari/HariStation_Data/Managed/System.Numerics.dll" }}
+,{ "pid":12345, "tid":12, "ts":1716645930423023, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":12, "ts":1716645930423031, "dur":1721, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/respm/OneDrive/Desktop/hari/HariStation_Data/Managed/System.Numerics.dll" }}
+,{ "pid":12345, "tid":12, "ts":1716645930424766, "dur":1538, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/respm/OneDrive/Desktop/hari/HariStation_Data/Managed/System.Core.dll" }}
+,{ "pid":12345, "tid":12, "ts":1716645930426307, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":12, "ts":1716645930426313, "dur":1193, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/respm/OneDrive/Desktop/hari/HariStation_Data/Managed/System.Core.dll" }}
+,{ "pid":12345, "tid":12, "ts":1716645930427520, "dur":546, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/respm/OneDrive/Desktop/hari/HariStation_Data/Managed/System.Configuration.dll" }}
+,{ "pid":12345, "tid":12, "ts":1716645930428069, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":12, "ts":1716645930428075, "dur":920, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/respm/OneDrive/Desktop/hari/HariStation_Data/Managed/System.Configuration.dll" }}
+,{ "pid":12345, "tid":12, "ts":1716645930429005, "dur":151335, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/respm/OneDrive/Desktop/hari/HariStation_Data/Managed/System.ComponentModel.Composition.dll" }}
+,{ "pid":12345, "tid":12, "ts":1716645930580345, "dur":3, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":12, "ts":1716645930580355, "dur":1280, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/respm/OneDrive/Desktop/hari/HariStation_Data/Managed/System.ComponentModel.Composition.dll" }}
+,{ "pid":12345, "tid":12, "ts":1716645930581651, "dur":2766129, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":13, "ts":1716645930168056, "dur":1, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":13, "ts":1716645930168057, "dur":1963, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":13, "ts":1716645930170021, "dur":13308, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/respm/OneDrive/Desktop/hari/MonoBleedingEdge/etc/mono/4.5/machine.config" }}
+,{ "pid":12345, "tid":13, "ts":1716645930183334, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":13, "ts":1716645930183348, "dur":5504, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/respm/OneDrive/Desktop/hari/MonoBleedingEdge/etc/mono/4.5/machine.config" }}
+,{ "pid":12345, "tid":13, "ts":1716645930188891, "dur":119071, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/respm/OneDrive/Desktop/hari/HariStation_Data/Managed/UnityEngine.UnityWebRequestModule.dll" }}
+,{ "pid":12345, "tid":13, "ts":1716645930307967, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":13, "ts":1716645930307974, "dur":902, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/respm/OneDrive/Desktop/hari/HariStation_Data/Managed/UnityEngine.UnityWebRequestModule.dll" }}
+,{ "pid":12345, "tid":13, "ts":1716645930308899, "dur":2728, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/respm/OneDrive/Desktop/hari/HariStation_Data/Managed/UnityEngine.AnimationModule.dll" }}
+,{ "pid":12345, "tid":13, "ts":1716645930311632, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":13, "ts":1716645930311641, "dur":866, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/respm/OneDrive/Desktop/hari/HariStation_Data/Managed/UnityEngine.AnimationModule.dll" }}
+,{ "pid":12345, "tid":13, "ts":1716645930312520, "dur":162544, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/respm/OneDrive/Desktop/hari/HariStation_Data/Managed/UnityEngine.AndroidJNIModule.dll" }}
+,{ "pid":12345, "tid":13, "ts":1716645930475068, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":13, "ts":1716645930475074, "dur":2045, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/respm/OneDrive/Desktop/hari/HariStation_Data/Managed/UnityEngine.AndroidJNIModule.dll" }}
+,{ "pid":12345, "tid":13, "ts":1716645930477133, "dur":9, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/respm/OneDrive/Desktop/hari/HariStation_Data/sharedassets0.assets.resS" }}
+,{ "pid":12345, "tid":13, "ts":1716645930477157, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":13, "ts":1716645930477162, "dur":79885, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/respm/OneDrive/Desktop/hari/HariStation_Data/sharedassets0.assets.resS" }}
+,{ "pid":12345, "tid":13, "ts":1716645930557067, "dur":2790691, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":14, "ts":1716645930168078, "dur":1, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":14, "ts":1716645930168079, "dur":1932, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":14, "ts":1716645930170011, "dur":64, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/respm/OneDrive/Desktop/hari/MonoBleedingEdge/etc/mono/4.5/settings.map" }}
+,{ "pid":12345, "tid":14, "ts":1716645930170077, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":14, "ts":1716645930175399, "dur":4924, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/respm/OneDrive/Desktop/hari/MonoBleedingEdge/etc/mono/4.5/settings.map" }}
+,{ "pid":12345, "tid":14, "ts":1716645930180365, "dur":160, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/respm/OneDrive/Desktop/hari/HariStation_Data/Resources/unity default resources" }}
+,{ "pid":12345, "tid":14, "ts":1716645930180529, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":14, "ts":1716645930181625, "dur":27136, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/respm/OneDrive/Desktop/hari/HariStation_Data/Resources/unity default resources" }}
+,{ "pid":12345, "tid":14, "ts":1716645930208796, "dur":25897, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/respm/OneDrive/Desktop/hari/HariStation_Data/Managed/UnityEngine.UnityCurlModule.dll" }}
+,{ "pid":12345, "tid":14, "ts":1716645930234698, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":14, "ts":1716645930234703, "dur":1678, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/respm/OneDrive/Desktop/hari/HariStation_Data/Managed/UnityEngine.UnityCurlModule.dll" }}
+,{ "pid":12345, "tid":14, "ts":1716645930236391, "dur":682, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/respm/OneDrive/Desktop/hari/HariStation_Data/Managed/UnityEngine.TextCoreFontEngineModule.dll" }}
+,{ "pid":12345, "tid":14, "ts":1716645930237076, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":14, "ts":1716645930237082, "dur":1058, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/respm/OneDrive/Desktop/hari/HariStation_Data/Managed/UnityEngine.TextCoreFontEngineModule.dll" }}
+,{ "pid":12345, "tid":14, "ts":1716645930238150, "dur":53887, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/respm/OneDrive/Desktop/hari/HariStation_Data/Managed/UnityEngine.SubstanceModule.dll" }}
+,{ "pid":12345, "tid":14, "ts":1716645930292040, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":14, "ts":1716645930292047, "dur":1265, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/respm/OneDrive/Desktop/hari/HariStation_Data/Managed/UnityEngine.SubstanceModule.dll" }}
+,{ "pid":12345, "tid":14, "ts":1716645930293323, "dur":115550, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/respm/OneDrive/Desktop/hari/HariStation_Data/Managed/UnityEngine.CrashReportingModule.dll" }}
+,{ "pid":12345, "tid":14, "ts":1716645930408878, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":14, "ts":1716645930408887, "dur":882, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/respm/OneDrive/Desktop/hari/HariStation_Data/Managed/UnityEngine.CrashReportingModule.dll" }}
+,{ "pid":12345, "tid":14, "ts":1716645930409782, "dur":113904, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/respm/OneDrive/Desktop/hari/HariStation_Data/Managed/System.Data.DataSetExtensions.dll" }}
+,{ "pid":12345, "tid":14, "ts":1716645930523692, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":14, "ts":1716645930523701, "dur":1542, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/respm/OneDrive/Desktop/hari/HariStation_Data/Managed/System.Data.DataSetExtensions.dll" }}
+,{ "pid":12345, "tid":14, "ts":1716645930525258, "dur":11, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/respm/OneDrive/Desktop/hari/HariStation_Data/level0.resS" }}
+,{ "pid":12345, "tid":14, "ts":1716645930525271, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":14, "ts":1716645930525276, "dur":8759, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/respm/OneDrive/Desktop/hari/HariStation_Data/level0.resS" }}
+,{ "pid":12345, "tid":14, "ts":1716645930534053, "dur":8, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/respm/OneDrive/Desktop/hari/HariStation_Data/level0" }}
+,{ "pid":12345, "tid":14, "ts":1716645930534063, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":14, "ts":1716645930534069, "dur":8303, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/respm/OneDrive/Desktop/hari/HariStation_Data/level0" }}
+,{ "pid":12345, "tid":14, "ts":1716645930542388, "dur":10, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/respm/OneDrive/Desktop/hari/HariStation_Data/globalgamemanagers.assets" }}
+,{ "pid":12345, "tid":14, "ts":1716645930542400, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":14, "ts":1716645930542407, "dur":25523, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/respm/OneDrive/Desktop/hari/HariStation_Data/globalgamemanagers.assets" }}
+,{ "pid":12345, "tid":14, "ts":1716645930567944, "dur":2779840, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":15, "ts":1716645930168115, "dur":0, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":15, "ts":1716645930168115, "dur":1848, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":15, "ts":1716645930169964, "dur":846, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/respm/OneDrive/Desktop/hari/MonoBleedingEdge/etc/mono/4.5/Browsers/Compat.browser" }}
+,{ "pid":12345, "tid":15, "ts":1716645930170811, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":15, "ts":1716645930175738, "dur":3195, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/respm/OneDrive/Desktop/hari/MonoBleedingEdge/etc/mono/4.5/Browsers/Compat.browser" }}
+,{ "pid":12345, "tid":15, "ts":1716645930178974, "dur":136, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/respm/OneDrive/Desktop/hari/MonoBleedingEdge/etc/mono/config" }}
+,{ "pid":12345, "tid":15, "ts":1716645930179113, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":15, "ts":1716645930179121, "dur":1295, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/respm/OneDrive/Desktop/hari/MonoBleedingEdge/etc/mono/config" }}
+,{ "pid":12345, "tid":15, "ts":1716645930180467, "dur":577, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/respm/OneDrive/Desktop/hari/HariStation_Data/Managed/UnityEngine.XRModule.dll" }}
+,{ "pid":12345, "tid":15, "ts":1716645930181049, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":15, "ts":1716645930183202, "dur":2748, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/respm/OneDrive/Desktop/hari/HariStation_Data/Managed/UnityEngine.XRModule.dll" }}
+,{ "pid":12345, "tid":15, "ts":1716645930185964, "dur":36808, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/respm/OneDrive/Desktop/hari/HariStation_Data/Managed/UnityEngine.VFXModule.dll" }}
+,{ "pid":12345, "tid":15, "ts":1716645930222775, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":15, "ts":1716645930222781, "dur":10045, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/respm/OneDrive/Desktop/hari/HariStation_Data/Managed/UnityEngine.VFXModule.dll" }}
+,{ "pid":12345, "tid":15, "ts":1716645930232838, "dur":2841, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/respm/OneDrive/Desktop/hari/HariStation_Data/Managed/UnityEngine.UIElementsModule.dll" }}
+,{ "pid":12345, "tid":15, "ts":1716645930235682, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":15, "ts":1716645930235688, "dur":1756, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/respm/OneDrive/Desktop/hari/HariStation_Data/Managed/UnityEngine.UIElementsModule.dll" }}
+,{ "pid":12345, "tid":15, "ts":1716645930237454, "dur":107832, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/respm/OneDrive/Desktop/hari/HariStation_Data/Managed/UnityEngine.TerrainModule.dll" }}
+,{ "pid":12345, "tid":15, "ts":1716645930345290, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":15, "ts":1716645930345298, "dur":916, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/respm/OneDrive/Desktop/hari/HariStation_Data/Managed/UnityEngine.TerrainModule.dll" }}
+,{ "pid":12345, "tid":15, "ts":1716645930346226, "dur":215525, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/respm/OneDrive/Desktop/hari/HariStation_Data/Managed/System.IO.Compression.dll" }}
+,{ "pid":12345, "tid":15, "ts":1716645930561756, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":15, "ts":1716645930561765, "dur":1136, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/respm/OneDrive/Desktop/hari/HariStation_Data/Managed/System.IO.Compression.dll" }}
+,{ "pid":12345, "tid":15, "ts":1716645930562914, "dur":2784881, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":16, "ts":1716645930168171, "dur":0, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":16, "ts":1716645930168172, "dur":1989, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":16, "ts":1716645930170161, "dur":782, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/respm/OneDrive/Desktop/hari/MonoBleedingEdge/etc/mono/2.0/Browsers/Compat.browser" }}
+,{ "pid":12345, "tid":16, "ts":1716645930170945, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":16, "ts":1716645930176189, "dur":3236, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/respm/OneDrive/Desktop/hari/MonoBleedingEdge/etc/mono/2.0/Browsers/Compat.browser" }}
+,{ "pid":12345, "tid":16, "ts":1716645930179497, "dur":12160, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/respm/OneDrive/Desktop/hari/UnityCrashHandler64.exe" }}
+,{ "pid":12345, "tid":16, "ts":1716645930191661, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":16, "ts":1716645930191668, "dur":1343, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/respm/OneDrive/Desktop/hari/UnityCrashHandler64.exe" }}
+,{ "pid":12345, "tid":16, "ts":1716645930193043, "dur":25619, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/respm/OneDrive/Desktop/hari/HariStation_Data/Managed/UnityEngine.UnityTestProtocolModule.dll" }}
+,{ "pid":12345, "tid":16, "ts":1716645930218668, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":16, "ts":1716645930218774, "dur":2714, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/respm/OneDrive/Desktop/hari/HariStation_Data/Managed/UnityEngine.UnityTestProtocolModule.dll" }}
+,{ "pid":12345, "tid":16, "ts":1716645930221504, "dur":31532, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/respm/OneDrive/Desktop/hari/HariStation_Data/Managed/UnityEngine.UnityConnectModule.dll" }}
+,{ "pid":12345, "tid":16, "ts":1716645930253040, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":16, "ts":1716645930253048, "dur":3797, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/respm/OneDrive/Desktop/hari/HariStation_Data/Managed/UnityEngine.UnityConnectModule.dll" }}
+,{ "pid":12345, "tid":16, "ts":1716645930256856, "dur":651, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/respm/OneDrive/Desktop/hari/HariStation_Data/Managed/UnityEngine.PhysicsModule.dll" }}
+,{ "pid":12345, "tid":16, "ts":1716645930257510, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":16, "ts":1716645930257516, "dur":1005, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/respm/OneDrive/Desktop/hari/HariStation_Data/Managed/UnityEngine.PhysicsModule.dll" }}
+,{ "pid":12345, "tid":16, "ts":1716645930258531, "dur":979, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/respm/OneDrive/Desktop/hari/HariStation_Data/Managed/UnityEngine.ParticleSystemModule.dll" }}
+,{ "pid":12345, "tid":16, "ts":1716645930259513, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":16, "ts":1716645930259519, "dur":2842, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/respm/OneDrive/Desktop/hari/HariStation_Data/Managed/UnityEngine.ParticleSystemModule.dll" }}
+,{ "pid":12345, "tid":16, "ts":1716645930262393, "dur":72791, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/respm/OneDrive/Desktop/hari/HariStation_Data/Managed/UnityEngine.LocalizationModule.dll" }}
+,{ "pid":12345, "tid":16, "ts":1716645930335188, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":16, "ts":1716645930336017, "dur":10050, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/respm/OneDrive/Desktop/hari/HariStation_Data/Managed/UnityEngine.LocalizationModule.dll" }}
+,{ "pid":12345, "tid":16, "ts":1716645930346084, "dur":124839, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/respm/OneDrive/Desktop/hari/HariStation_Data/Managed/System.IO.Compression.FileSystem.dll" }}
+,{ "pid":12345, "tid":16, "ts":1716645930470928, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":16, "ts":1716645930470935, "dur":1048, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/respm/OneDrive/Desktop/hari/HariStation_Data/Managed/System.IO.Compression.FileSystem.dll" }}
+,{ "pid":12345, "tid":16, "ts":1716645930472001, "dur":13, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/respm/OneDrive/Desktop/hari/HariStation_Data/sharedassets1.assets" }}
+,{ "pid":12345, "tid":16, "ts":1716645930472017, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":16, "ts":1716645930472024, "dur":37693, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/respm/OneDrive/Desktop/hari/HariStation_Data/sharedassets1.assets" }}
+,{ "pid":12345, "tid":16, "ts":1716645930509733, "dur":10, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/respm/OneDrive/Desktop/hari/HariStation_Data/resources.assets.resS" }}
+,{ "pid":12345, "tid":16, "ts":1716645930509745, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":16, "ts":1716645930509752, "dur":41784, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/respm/OneDrive/Desktop/hari/HariStation_Data/resources.assets.resS" }}
+,{ "pid":12345, "tid":16, "ts":1716645930551615, "dur":2796159, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1716645933351584, "dur":2115, "ph":"X", "name": "ProfilerWriteOutput" }
+,{ "pid": 0, "tid": 1, "ts": 1716645933359609, "dur": 6098, "ph": "X", "name": "backend_profiler1.traceevents", "args": {} },
+{ "pid": 0, "tid": 1, "ts": 1716645933359237, "dur": 6511, "ph": "X", "name": "Write chrome-trace events", "args": {} },
