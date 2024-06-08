@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class questbackground : MonoBehaviour
 {
@@ -8,29 +9,70 @@ public class questbackground : MonoBehaviour
     public TMPro.TMP_Text quest2;
     public RectTransform Qbackground;
 
+    public GameObject[] image;
+
+    public RawImage background;
+
     private void Start()
     {
         quest1.text = " ";
+
+        foreach(GameObject img in image)
+        {
+            img.SetActive(false);
+        }
     }
 
 
     private void Update()
     {
-        if(quest2.text!= ""&& quest2.text != " ")
+        if (quest1.text != "" && quest1.text != " ")
         {
-            Qbackground.gameObject.SetActive(true);
-            ResizeImageByTextLength();
+            background.enabled = true;
+            if (quest1.text == "문 여는법 찾기")
+            {
+                image[0].SetActive(true);
+            }
+            else if (quest1.text == "열쇠를 찾아보자") 
+            {
+                image[1].SetActive(true);
+            }
+            else if(quest1.text== "진통제를 찾아보자")
+            {
+                image[2].SetActive(true);
+
+            }
+            else if(quest1.text== "레버를 찾아보자")
+            {
+                image[3].SetActive(true);
+            }
+            else if(quest1.text== "고객대기실로 이동")
+            {
+                image[4].SetActive(true);
+            }
+            else if(quest1.text== "나갈방법을 찾아보자")
+            {
+                image[5].SetActive(true);
+            }
+            else if(quest1.text== "출구를 찾으시오")
+            {
+                image[6].SetActive(true);
+            }
+            else if (quest1.text == "중앙으로 이동하기")
+            {
+                image[7].SetActive(true);
+            }
         }
         else
         {
-            Qbackground.gameObject.SetActive(false);
+            foreach (GameObject img in image)
+            {
+                img.SetActive(false);
+            }
+            background.enabled = false;
+
         }
+        /*i*/
     }
-    void ResizeImageByTextLength()
-    {
-        // 텍스트의 길이에 따라 이미지의 크기를 조절
-        float textLength = quest2.preferredWidth;
-        float imageWidth = textLength * 0.25f; // 예시에서는 텍스트 길이의 1.5배로 이미지 크기 조절
-        Qbackground.sizeDelta = new Vector2(imageWidth, Qbackground.sizeDelta.y);
-    }
+    
 }

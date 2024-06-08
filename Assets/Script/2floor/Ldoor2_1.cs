@@ -73,10 +73,10 @@ public class Ldoor2_1 : MonoBehaviour
         yield return StartCoroutine(NormalChat("이런.."));
         yield return StartCoroutine(NormalChat("증세가 심각해지고 있어"));
         yield return StartCoroutine(NormalChat("빨리 여기서 나가야해!!"));
-        quest.text = "출구를 찾으시오";
-        GameManager.canPlayerMove2 = true;
         autoProceedDelay = 0f;
         yield return StartCoroutine(NormalChat(" "));
+        quest.text = "출구를 찾으시오";
+        GameManager.canPlayerMove2 = true;
         yield return new WaitForSeconds(2f);
         quest.text = " ";
     }

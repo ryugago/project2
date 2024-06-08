@@ -15,7 +15,7 @@ public class bag1trigger : MonoBehaviour
     private PlayerController Playercon;
 
     //여기 메시지 바꿀꺼
-    bool trigger = false;
+    public bool trigger = false;
     bool trigger2 = false;
 
     [Header("메시지")]
@@ -24,6 +24,9 @@ public class bag1trigger : MonoBehaviour
 
     //public GameObject baseui;
     public PauseMenu menu;
+
+    public bool message1;
+    
 
     private void Start()
     {
@@ -48,6 +51,7 @@ public class bag1trigger : MonoBehaviour
                 T_img.SetActive(false);
                 menu.CallMenu();
                 menu.ClickMessage();
+                message1 = true;
                 //baseui.SetActive(false);
             }
         }

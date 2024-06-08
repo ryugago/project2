@@ -45,6 +45,8 @@ public class Ttrigger4 : MonoBehaviour
 
     private PlayerController Playercon;
 
+    public TMPro.TMP_Text quest1;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -173,6 +175,10 @@ public class Ttrigger4 : MonoBehaviour
         intertxt.text = "메모장이 업데이트가 되었습니다";
         yield return new WaitForSeconds(2f);
         intertxt.text = " ";
+        quest1.text = "중앙으로 이동하기";
+        yield return new WaitForSeconds(3f);
+        quest1.text =  "";
+
     }
     private void OnTriggerEnter(Collider other)
     {

@@ -117,10 +117,13 @@ public class incustmerroomchat : MonoBehaviour
         yield return StartCoroutine(NormalChat("잠깐만.."));
         autoProceedDelay = 3f;
         yield return StartCoroutine(NormalChat("어디서 많이 본 장소같아..."));
+        autoProceedDelay = 0f;
+        yield return StartCoroutine(NormalChat(" "));
         quest.text = "나갈방법을 찾아보자";
-        autoProceedDelay = 0.1f;
         cutomertrigger = true;
         GameManager.canPlayerMove2 = true;
-        yield return StartCoroutine(NormalChat(" "));
+        yield return new WaitForSeconds(3f);
+        quest.text = " ";
+
     }
 }

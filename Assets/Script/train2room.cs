@@ -28,6 +28,8 @@ public class train2room : MonoBehaviour
 
     GameObject nearObject;
 
+    public GameObject traindoorimg;
+
     void Start()
     {
     }
@@ -95,9 +97,12 @@ public class train2room : MonoBehaviour
     IEnumerator TextPractice()
     {
         yield return StartCoroutine(NormalChat("이문은 어떻게 여는 거지?"));
+        //traindoorimg.SetActive(true);
         quest.text = "문 여는법 찾기";
+        autoProceedDelay = 0f;
         yield return StartCoroutine(NormalChat(" "));
-        yield return new WaitForSeconds(3f);
+        yield return new WaitForSeconds(5f);
+        //traindoorimg.SetActive(false);
         quest.text = " ";
         Destroy(gameObject);
     }
@@ -119,7 +124,7 @@ public class train2room : MonoBehaviour
     {
         if (player.hasPhone)
         {
-            if (other.tag == null)
+            if (other.tag == "ViewPoint")
             {
                 nearObject = null;
                 inter_img.SetActive(false);

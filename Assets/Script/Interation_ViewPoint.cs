@@ -46,6 +46,7 @@ public class Interation_ViewPoint : MonoBehaviour
                 {
                     trigger1 = false;
                     quest.text = "기장실로 가보자";
+                    Invoke("questde", 2f);
                 }
                 StartCoroutine(ResetQuestText());
                 Item item = nearObject.GetComponent<Item>();
@@ -101,6 +102,11 @@ public class Interation_ViewPoint : MonoBehaviour
             turnstiletext.text = " ";
         }
 
+    }
+
+    void questde()
+    {
+        quest.text = " ";
     }
 
     IEnumerator ResetQuestText()

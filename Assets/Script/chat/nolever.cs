@@ -79,7 +79,9 @@ public class nolever : MonoBehaviour
         quest.text = "레버를 찾아보자";
         GameManager.onlycamera = true;
         trigger = true;
+        autoProceedDelay = 0f;
         yield return StartCoroutine(NormalChat(" "));
+        yield return new WaitForSeconds(5f);
         quest.text = " ";
     }
 }

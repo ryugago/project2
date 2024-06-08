@@ -45,7 +45,7 @@ public class change_obj : MonoBehaviour
                 {
                     if (nearObject.tag == "ViewPoint")
                     {
-                        if (!(clip = null))
+                        if (!(clip == null))
                             SoundManager.instance.SFXPlay("objsound", clip);
                         isenabled = false;
                         //GameManager.isPause = true;

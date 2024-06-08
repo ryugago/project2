@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using FronkonGames.SpiceUp.DoubleVision;
 
 public class Ldoor2 : MonoBehaviour
 {
@@ -42,16 +43,24 @@ public class Ldoor2 : MonoBehaviour
     public Animator gate_close;
     public AudioClip gate_close_sound;
 
+    public GameObject[] CCTV;
 
     private void Start()
     {
         player = GameObject.FindGameObjectWithTag("Player");
+        foreach (GameObject TV in CCTV)
+        {
+            TV.SetActive(false);
+        }
     }
     private void Update()
     {
         AnimatorStateInfo stateInfo = Ptrip.GetCurrentAnimatorStateInfo(0); // Assuming OCamera_stop is in layer 0
         bool isOCameraStopPlaying = stateInfo.IsName("OCamera_stop");
         bool playermove = stateInfo.IsName("camera_idle");
+
+        DoubleVision.AddRenderFeature();
+        DoubleVision.Settings settings = DoubleVision.GetSettings();
         /*foreach (var element in skipButton) // 버튼 검사
         {
             if (Input.GetKeyDown(element))
@@ -61,6 +70,10 @@ public class Ldoor2 : MonoBehaviour
         }*/
         if (trigger1 && trigger2)
         {
+            foreach (GameObject TV in CCTV)
+            {
+                TV.SetActive(true);
+            }
             trigger2 = false;
             Ptrip.SetBool("trap2f", true);
             StartCoroutine(TextPractice());
@@ -92,9 +105,16 @@ public class Ldoor2 : MonoBehaviour
         Ptrip.SetBool("trap2f", false);
         yield return new WaitForSeconds(0.4f); // 1.4초 대기
 
-        // 1.4초 후에 실행될 작업들
+        foreach(GameObject TV in CCTV)
+        {
+            TV.SetActive(false);
+        }
         blurEffect.BlurRadius = 0;
         mental_breakdown.SetFloat("_Fullscreenintensity", 0f);
+        DoubleVision.AddRenderFeature();
+        DoubleVision.Settings settings = DoubleVision.GetSettings();
+        settings.strength.z = 0f;
+        // 1.4초 후에 실행될 작업들
         yield return new WaitForSeconds(1f); // 1초 대기
 
         hand4ren.material = hand4ma;                                     //phone.SetActive(true);
@@ -152,12 +172,15 @@ public class Ldoor2 : MonoBehaviour
         Oplayer.enabled = true;
         jusa.enabled = true;
         yield return StartCoroutine(NormalChat("이상해... 너무 이상해..."));
-
+        DoubleVision.AddRenderFeature();
+        DoubleVision.Settings settings = DoubleVision.GetSettings();
+        settings.strength.z = 1f;
+        mental_breakdown.SetFloat("_Fullscreenintensity", 0.1f);
         yield return StartCoroutine(NormalChat("빨간색의 점들이 나를 노려보고 있어.."));
 
         yield return StartCoroutine(NormalChat("진정제를 빨리 투여 해야해..."));
         Tjusa = true;
-        autoProceedDelay = 0.1f;
+        autoProceedDelay = 0f;
         yield return StartCoroutine(NormalChat(" "));
     }
     private void OnTriggerEnter(Collider other)

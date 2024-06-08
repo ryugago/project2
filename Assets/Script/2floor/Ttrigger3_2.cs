@@ -95,9 +95,9 @@ public class Ttrigger3_2 : MonoBehaviour
         autoProceedDelay = 3f;
         yield return StartCoroutine(NormalChat("이대로 죽을 수 없어.."));
         autoProceedDelay = 0f;
-        quest.text = "화장실을 둘러보자";
+        //quest.text = "화장실을 둘러보자";
         yield return StartCoroutine(NormalChat(" "));
         yield return new WaitForSeconds(1f);
-        quest.text = " ";
+        //quest.text = " ";
     }
 }

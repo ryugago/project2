@@ -11,10 +11,15 @@ public class customerouttrigger : MonoBehaviour
 
     public int trigger = 0;
 
+    private bool enbl = true;
+
 
     public AudioClip cuopensound;
     private void Update()
     {
+        if (!enbl)
+            return;
+
         if (trigger >= 2)
         {
 
@@ -25,6 +30,7 @@ public class customerouttrigger : MonoBehaviour
             redlight.range = 10f;
             redlight.intensity = 7f;
             Invoke("Copendoor", 5f);
+            enbl = false;
         }
     }
     void Copendoor()

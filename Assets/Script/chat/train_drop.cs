@@ -88,7 +88,7 @@ public class train_drop : MonoBehaviour
         autoProceedDelay = 4f;
         yield return StartCoroutine(NormalChat("허억.."));
         autoProceedDelay = 5f;
-        quest2.text = "진통제를 찾아보자";
+        quest.text = "진통제를 찾아보자";
         yield return StartCoroutine(NormalChat("내 진통제가... 어딘가 있을텐데"));
         autoProceedDelay = 5f;
         yield return StartCoroutine(NormalChat(" "));

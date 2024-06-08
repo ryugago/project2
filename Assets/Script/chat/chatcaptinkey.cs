@@ -79,7 +79,7 @@ public class chatcaptinkey : MonoBehaviour
         quest.text = "열쇠를 찾아보자";
         GameManager.onlycamera = true;
         yield return StartCoroutine(NormalChat(" "));
-        yield return new WaitForSeconds(1f);
+        yield return new WaitForSeconds(5f);
         quest.text = " ";
 
     }

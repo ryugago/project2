@@ -13,6 +13,10 @@ public class TVLIghton : MonoBehaviour
     public Material TVmaterial;
 
     public GameObject tvsound;
+
+    public bag1trigger postertrigger;
+
+    public TMPro.TMP_Text quest;
     // Start is called before the first frame update
     void Start()
     {
@@ -29,7 +33,19 @@ public class TVLIghton : MonoBehaviour
             TVlight.gameObject.SetActive(true);
             TVobj.GetComponent<Renderer>().material = TVmaterial;
         }
+        if (postertrigger.message1)
+        {
+            quest.text = "고객대기실로 이동";
+            Invoke("deltquest", 3f);
+        }
+
     }
+
+    void deltquest()
+    {
+        quest.text = " ";
+    }
+
     private void OnTriggerEnter(Collider other)
     {
         if (other.tag == "Player")
