@@ -99,7 +99,7 @@ public class Train_hallucination : MonoBehaviour
                                              //phone.SetActive(true);
         jusa.SetBool("jusa", false);
         GameManager.canPlayerMove2 = true;
-        quest2.text = "열쇠를 찾아보자";
+        quest2.text = "열쇠를 찾아보자.";
     }
 
     IEnumerator ApplyHitEffect()

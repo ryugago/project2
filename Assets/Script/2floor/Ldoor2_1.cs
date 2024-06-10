@@ -16,6 +16,7 @@ public class Ldoor2_1 : MonoBehaviour
 
     public TMPro.TMP_Text quest;
 
+    public AudioClip bgsound;
     void Start()
     {
         StartCoroutine(TextPractice());
@@ -75,8 +76,10 @@ public class Ldoor2_1 : MonoBehaviour
         yield return StartCoroutine(NormalChat("빨리 여기서 나가야해!!"));
         autoProceedDelay = 0f;
         yield return StartCoroutine(NormalChat(" "));
-        quest.text = "출구를 찾으시오";
+        quest.text = "출구를 찾아보자.";
+        SoundManager.instance.BgSoundPlay(bgsound);
         GameManager.canPlayerMove2 = true;
+        DataManager.instance.DataSave();
         yield return new WaitForSeconds(2f);
         quest.text = " ";
     }

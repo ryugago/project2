@@ -45,7 +45,7 @@ public class last1 : MonoBehaviour
         {
             GameManager.canPlayerMove2 = false;
             armpivot.enabled = false;
-            Tinteraction.text = "전화가 왔습니다";
+            Tinteraction.text = "전화가 왔습니다.";
             SoundManager.instance.SFXPlay("PhoneCall", clip, true);
             takecall.SetActive(true);
             Iphone.sprite = callimg;

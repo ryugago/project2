@@ -42,6 +42,10 @@ public class Ttrigger4_1 : MonoBehaviour
     public Material shader;
     
     public Collider doorbuttoncollider;
+
+    public AudioClip clip;
+
+    private bool shaterup = true;
     // Start is called before the first frame update
     void Start()
     {
@@ -70,6 +74,7 @@ public class Ttrigger4_1 : MonoBehaviour
                     open.SetActive(false);
                     Destroy(deleobj);
                     StartCoroutine(TextPractice2());
+                    SoundManager.instance.SFXPlay("shutterunlock", clip);
                 }
             }
             if (trigger3)

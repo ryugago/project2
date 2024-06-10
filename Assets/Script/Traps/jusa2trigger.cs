@@ -16,6 +16,7 @@ public class jusa2trigger : MonoBehaviour
     public Material hand3ma;
     public Renderer hand3ren;
     private bool trigger = false;
+    private bool trigger2 = true;
 
     public jusa2before before;
     public jusa2after after;
@@ -24,11 +25,12 @@ public class jusa2trigger : MonoBehaviour
 
     private void Update()
     {
-        if (trigger&& before.trigger)
+        if (trigger&& before.trigger&& trigger2)
         {
             jusaimg.SetActive(true);
             if (Input.GetKeyDown(KeyCode.T))
             {
+                trigger2 = false;
                 before.trigger = false;
                 jusaimg.SetActive(false);
                 jusa.SetBool("jusa", true);
@@ -54,6 +56,7 @@ public class jusa2trigger : MonoBehaviour
         jusa.SetBool("jusa", false);
         after.enabled = true;
         GameManager.canPlayerMove2 = true;
+        DataManager.instance.DataSave();
         Destroy(gameObject);
 
     }

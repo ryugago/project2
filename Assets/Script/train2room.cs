@@ -98,7 +98,7 @@ public class train2room : MonoBehaviour
     {
         yield return StartCoroutine(NormalChat("이문은 어떻게 여는 거지?"));
         //traindoorimg.SetActive(true);
-        quest.text = "문 여는법 찾기";
+        quest.text = "문 여는 방법을 찾아보자.";
         autoProceedDelay = 0f;
         yield return StartCoroutine(NormalChat(" "));
         yield return new WaitForSeconds(5f);

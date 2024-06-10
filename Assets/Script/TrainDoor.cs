@@ -32,6 +32,17 @@ public class TrainDoor : MonoBehaviour
 
     public AudioClip clip;
 
+
+    public TMP_Text ChatText; // 실제 채팅이 나오는 텍스트
+    public float delayTime;
+    public float autoProceedDelay = 3f;
+
+    public List<KeyCode> skipButton; // 대화를 빠르게 넘길 수 있는 키
+
+    public string writerText = "";
+    
+    bool isButtonClicked = false;
+    
     private void Update()
     {
 
@@ -43,7 +54,7 @@ public class TrainDoor : MonoBehaviour
                 if (Play.hasKeys[1])
                 {
                     Isplayer2 = false;
-                    interaction_txt.text = "레버가 고장났습니다.";
+                    StartCoroutine(TextPractice());
                     quest.text = " 문 가까이가서 강제로 열자";
                     trigger_open = true;
                     Invoke("ClearInteractionText", 2f);
@@ -64,7 +75,7 @@ public class TrainDoor : MonoBehaviour
                         check = false;
                     }
                     SoundManager.instance.BgSoundPlay(clip);
-                    interaction_txt.text = "레버가 빠져있다";
+                    //interaction_txt.text = "레버가 빠져있다";
                     trap = true;
                 }
             }
@@ -76,6 +87,53 @@ public class TrainDoor : MonoBehaviour
         }
         
     }
+
+    // Start is called before the first frame update
+    IEnumerator NormalChat(string narration)
+    {
+        int a = 0;
+        writerText = "";
+
+        //텍스트 타이핑 효과
+        for (a = 0; a < narration.Length; a++)
+        {
+            writerText += narration[a];
+            ChatText.text = writerText;
+            yield return new WaitForSeconds(delayTime); // delayTime만큼 대기
+            if (isButtonClicked)
+            {
+                ChatText.text = narration;
+                a = narration.Length; // 버튼 눌리면 그냥 다 출력하게 함
+                isButtonClicked = false;
+            }
+        }
+        //yield return new WaitForSeconds(autoProceedDelay);
+
+
+        float timer = 0f;
+        while (timer < autoProceedDelay)
+        {
+
+            if (isButtonClicked)
+            {
+                isButtonClicked = false;
+                break;
+            }
+            timer += Time.deltaTime;
+            yield return null;
+        }
+    }
+
+    IEnumerator TextPractice()
+    {
+        autoProceedDelay = 3f;
+        yield return StartCoroutine(NormalChat("젠장 레버가 고장났어 문을 강제로 열어야해!!"));
+        autoProceedDelay = 0f;
+        yield return StartCoroutine(NormalChat(" "));
+        quest.text = " ";
+    }
+
+
     void ClearInteractionText()
     {
         interaction_txt.text = "";

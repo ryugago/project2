@@ -101,7 +101,7 @@ public class last1atfer : MonoBehaviour
         GameManager.canPlayerMove2 = true;
         yield return StartCoroutine(NormalChat(" "));
         SoundManager.instance.BgSoundPlay(bgmclip);
-        noteupdate.text = "노트가 업데이트가 됐습니다";
+        noteupdate.text = "노트가 업데이트 됐습니다.";
         Playercon.notenum = 2;
         //notepage.notenum = 2;
         yield return new WaitForSeconds(3f);

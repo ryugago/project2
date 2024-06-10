@@ -35,7 +35,7 @@ public class train_captain : MonoBehaviour
             else
             {
                 SoundManager.instance.SFXPlay("Locksound", locksound);
-                interac_txt.text = "잠겨있습니다";
+                //interac_txt.text = "잠겨있습니다";
                 chatcaptinkey.enabled = true;
                 trap = true;
             }

@@ -15,6 +15,8 @@ public class TVLIghton : MonoBehaviour
     public GameObject tvsound;
 
     public bag1trigger postertrigger;
+    public bool image = true;
+
 
     public TMPro.TMP_Text quest;
     // Start is called before the first frame update
@@ -33,8 +35,9 @@ public class TVLIghton : MonoBehaviour
             TVlight.gameObject.SetActive(true);
             TVobj.GetComponent<Renderer>().material = TVmaterial;
         }
-        if (postertrigger.message1)
+        if (postertrigger.message1&& image)
         {
+            image = false;
             quest.text = "고객대기실로 이동";
             Invoke("deltquest", 3f);
         }

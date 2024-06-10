@@ -37,7 +37,7 @@ public class bag1trigger : MonoBehaviour
     {
         if (trigger && !trigger2) 
         {
-            messagetext.text = "메시지가 왔습니다";
+            messagetext.text = "메시지가 왔습니다.";
             T_img.SetActive(true);
             Playercon.Messagenum = 4;
             //messagepanel.num = 4;

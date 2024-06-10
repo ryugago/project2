@@ -32,11 +32,15 @@ public class Ttrigger2_3 : MonoBehaviour
     public GameObject TOUT;
     public bool sadare=false;
 
+    public AudioClip clip;
+
     void Start()
     {
         Player = playcon.Player;
         StartCoroutine(TextPractice());
     }
+
+    
 
     private void Update()
     {
@@ -88,6 +92,8 @@ public class Ttrigger2_3 : MonoBehaviour
     IEnumerator TextPractice()
     {
         autoProceedDelay = 2f;
+        SoundManager.instance.SFXStop("underwater");
+        SoundManager.instance.SFXPlay("waterup", clip);
         yield return StartCoroutine(NormalChat("푸하.."));
         autoProceedDelay = 5f;
         yield return StartCoroutine(NormalChat("허억.. 허억.."));

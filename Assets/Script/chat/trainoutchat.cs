@@ -95,7 +95,7 @@ public class trainoutchat : MonoBehaviour
         autoProceedDelay = 0.1f;
         yield return StartCoroutine(NormalChat(" "));
         GameManager.onlycamera = true;
-        quest.text = "노트가 업데이트가 됐습니다";
+        quest.text = "노트가 업데이트 됐습니다.";
         Playercon.notenum = 1;
         //notepage.notenum = 1;
         yield return new WaitForSeconds(2f);

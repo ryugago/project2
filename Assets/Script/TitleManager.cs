@@ -53,14 +53,14 @@ public class TitleManager : MonoBehaviour
     IEnumerator LoadCoroutine()
     {
         AsyncOperation operation = SceneManager.LoadSceneAsync("GameScene");
-
+        thedata = DataManager.instance;
         while (!operation.isDone)
         {
+            thedata.DataLoad();
             loading.SetActive(true);
             yield return null;
         }
-
-        thedata = DataManager.instance;
+        
         thedata.DataLoad();
         Destroy(gameObject);
     }

@@ -45,7 +45,8 @@ public class DataManager : MonoBehaviour
         }
         else
         {
-            DataSave();
+            Debug.Log("세이브 없음");
+            //DataSave();
         }
     }
 }

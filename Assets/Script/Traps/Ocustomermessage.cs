@@ -40,7 +40,7 @@ public class Ocustomermessage : MonoBehaviour
     {
         if (trigger && !trigger2)
         {
-            messagetext.text = "메시지가 왔습니다";
+            messagetext.text = "메시지가 왔습니다.";
             T_img.SetActive(true);
             GameManager.canPlayerMove2 = false;
             Playercon.Messagenum = 7;

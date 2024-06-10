@@ -52,14 +52,15 @@ public class Etrigger3 : MonoBehaviour
 
         if(trigger3&& trigger4)
         {
-            messagetext.text = "메시지가 왔습니다";
+            messagetext.text = "메시지가 왔습니다.";
             T_img.SetActive(true);
             Playercon.Messagenum = 10;
             //messagepanel.num = 10;
             if (Input.GetKeyDown(KeyCode.T))
             {
-                GameManager.isPause = true;
                 trigger4 = false;
+                GameManager.canPlayerMove2 = true;
+                GameManager.isPause = true;
                 //posterlight.gameObject.SetActive(false);
                 messagetext.text = " ";
                 T_img.SetActive(false);
@@ -126,7 +127,6 @@ public class Etrigger3 : MonoBehaviour
         yield return StartCoroutine(NormalChat("여기는 막혀 있어.."));
         yield return StartCoroutine(NormalChat("다른 방법을 찾아볼까..."));
         Wall = false;
-        GameManager.canPlayerMove2 = true;
         autoProceedDelay = 0.1f;
         trigger3 = true;
         yield return StartCoroutine(NormalChat(" "));

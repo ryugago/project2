@@ -75,8 +75,8 @@ public class chatcaptinkey : MonoBehaviour
     {
         door = true;
         GameManager.onlycamera = false;
-        yield return StartCoroutine(NormalChat("열쇠라..열쇠를 도대체 어디서 찾으라는거지..."));
-        quest.text = "열쇠를 찾아보자";
+        yield return StartCoroutine(NormalChat("기장실 문이 잠겨있어.. 열쇠가 어디있지.."));
+        quest.text = "열쇠를 찾아보자.";
         GameManager.onlycamera = true;
         yield return StartCoroutine(NormalChat(" "));
         yield return new WaitForSeconds(5f);

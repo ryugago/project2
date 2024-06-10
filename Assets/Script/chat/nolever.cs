@@ -76,7 +76,7 @@ public class nolever : MonoBehaviour
     {
         GameManager.onlycamera = false;
         yield return StartCoroutine(NormalChat("이런.. 제길!! 레버가 없잖아"));
-        quest.text = "레버를 찾아보자";
+        quest.text = "레버를 찾아보자.";
         GameManager.onlycamera = true;
         trigger = true;
         autoProceedDelay = 0f;

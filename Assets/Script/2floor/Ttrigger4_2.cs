@@ -11,6 +11,7 @@ public class Ttrigger4_2 : MonoBehaviour
 
     public Animator dooropen;
 
+    public AudioClip buttonsound;
     public AudioClip shuttersound;
 
     private void Update()
@@ -21,6 +22,7 @@ public class Ttrigger4_2 : MonoBehaviour
             if (Input.GetKeyDown(KeyCode.E))
             {
                 trigger2 = false;
+                SoundManager.instance.SFXPlay("button", buttonsound);
                 SoundManager.instance.SFXPlay("shuttersound", shuttersound);
                 dooropen.SetTrigger("open");
                 button_img.SetActive(false);

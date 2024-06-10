@@ -45,6 +45,8 @@ public class Ldoor2 : MonoBehaviour
 
     public GameObject[] CCTV;
 
+    public bool enble = true;
+
     private void Start()
     {
         player = GameObject.FindGameObjectWithTag("Player");
@@ -55,6 +57,9 @@ public class Ldoor2 : MonoBehaviour
     }
     private void Update()
     {
+        if (!enble)
+            return;
+
         AnimatorStateInfo stateInfo = Ptrip.GetCurrentAnimatorStateInfo(0); // Assuming OCamera_stop is in layer 0
         bool isOCameraStopPlaying = stateInfo.IsName("OCamera_stop");
         bool playermove = stateInfo.IsName("camera_idle");
@@ -93,6 +98,7 @@ public class Ldoor2 : MonoBehaviour
         if(nextplayermove&& playermove)
         {
             nextplayermove = false;
+            enble = false;
             Vector3 newPosition = player.transform.position;
             newPosition.x += 1.5f;
             player.transform.position = newPosition;

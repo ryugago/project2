@@ -15,6 +15,10 @@ public class Ttrigger2_2 : MonoBehaviour
 
     private bool scriptActive = true;
 
+    private bool sound1 = true;
+
+    public AudioClip clip;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -28,6 +32,13 @@ public class Ttrigger2_2 : MonoBehaviour
     {
         if (!scriptActive) // 스크립트가 비활성화되었다면 아래 코드를 실행하지 않음
             return;
+        if (sound1)
+        {
+            sound1 = false;
+            SoundManager.instance.SFXStop("waterdrop");
+            SoundManager.instance.SFXPlay("underwater", clip, true);
+        }
+
         AnimatorStateInfo currentState = Tanima.GetCurrentAnimatorStateInfo(0);
         bool isTrapAnimationPlaying = currentState.IsName("camera1");
 

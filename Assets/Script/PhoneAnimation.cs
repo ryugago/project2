@@ -120,7 +120,7 @@ public class PhoneAnimation : MonoBehaviour
         
         if (isMessage && message)
         {
-            messagetext.text = "메시지가 왔습니다";
+            messagetext.text = "메시지가 왔습니다.";
             receive.SetActive(true);
             //messagepanel.num = 1;
             if (Input.GetKeyDown(KeyCode.T))
@@ -135,7 +135,7 @@ public class PhoneAnimation : MonoBehaviour
                 GameManager.isPause = true;
                 menu.CallMenu();
                 menu.ClickMessage();
-                baseui.SetActive(false);
+                //baseui.SetActive(false);
                 //messagemenu.SetActive(true);
                 //Message.SetActive(true);
                 //quest.text = "휴대폰 둘러보기";

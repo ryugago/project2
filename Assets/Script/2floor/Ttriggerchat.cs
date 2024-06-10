@@ -19,7 +19,7 @@ public class Ttriggerchat : MonoBehaviour
     public Sprite callimg;
     public Ttrigger2_2 chat;
     //public Animator armpivot;
-
+    public AudioClip clip;
     void Start()
     {
         StartCoroutine(TextPractice());
@@ -82,6 +82,7 @@ public class Ttriggerchat : MonoBehaviour
         chat.enabled = true;
         yield return StartCoroutine(NormalChat("³Êµµ ´çÇØºÁ!! ¶Ò..¶Ò.."));
         TextChater.text = " ";
+        SoundManager.instance.SFXPlay("waterdrop", clip);
         yield return StartCoroutine(NormalChat("¹¹.. ¿ì¿ó..."));
         //autoProceedDelay = 0.1f;
         //yield return StartCoroutine(NormalChat(" "));

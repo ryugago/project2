@@ -30,33 +30,34 @@ public class interactiontextmessageicon : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(intertxt.text== "메시지가 왔습니다")
+        if (!(intertxt.text == " ") && !(intertxt.text == ""))
         {
-            if (onesound)
+            backimg.enabled = true;
+            if (intertxt.text == "메시지가 왔습니다.")
             {
-                onesound = false;
-                SoundManager.instance.SFXPlay("PhoneCall", clip, false);
+                if (onesound)
+                {
+                    onesound = false;
+                    SoundManager.instance.SFXPlay("PhoneCall", clip, false);
+                }
+                keyT.SetActive(true);
+                messageicon.SetActive(true);
             }
-            keyT.SetActive(true);
-            backimg.enabled = true;
-            messageicon.SetActive(true);
-        }
-        else if(intertxt.text== "전화가 왔습니다")
-        {
-            keyT.SetActive(true);
-            backimg.enabled = true;
-            callicon.SetActive(true);
-        }
+            else if (intertxt.text == "전화가 왔습니다.")
+            {
+                keyT.SetActive(true);
+                callicon.SetActive(true);
+            }
 
-        else if (intertxt.text == "노트가 업데이트가 됐습니다")
-        {
-            if (onesound)
+            else if (intertxt.text == "노트가 업데이트 됐습니다.")
             {
-                onesound = false;
-                SoundManager.instance.SFXPlay("PhoneCall", clip, false);
+                if (onesound)
+                {
+                    onesound = false;
+                    SoundManager.instance.SFXPlay("PhoneCall", clip, false);
+                }
+                noteicon.SetActive(true);
             }
-            backimg.enabled = true;
-            noteicon.SetActive(true);
         }
         else
         {
