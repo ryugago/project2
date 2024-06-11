@@ -39,7 +39,7 @@ public class TrainDoor3open1 : MonoBehaviour
                 isDoor = !isDoor;
                 Train_door1.SetBool("door", true); // 애니메이션의 bool 변수를 false로 설정하여 정지
                 Train_door2.SetBool("door", true); // 애니메이션의 bool 변수를 false로 설정하여 정지
-                quest.text = "다음 호차로 가보자";
+                //quest.text = "다음 호차로 가보자";
                 StartCoroutine(ResetQuestText());
             }
         }

@@ -15,7 +15,7 @@ public class Etrigger3_2 : MonoBehaviour
     private bool trigger1;
     private bool trigger2=true;
 
-
+    public AudioClip clip;
 
     // Update is called once per frame
     void Update()
@@ -25,6 +25,7 @@ public class Etrigger3_2 : MonoBehaviour
             O_img.SetActive(true);
             if (Input.GetKeyDown(KeyCode.E))
             {
+                SoundManager.instance.SFXPlay("toilet", clip);
                 trigger2 = false;
                 O_img.SetActive(false);
                 Dcollider.enabled = false;

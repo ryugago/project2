@@ -54,7 +54,7 @@ public class PlayerStart : MonoBehaviour
             playerct = false;
             image.SetActive(true);
 
-            StartCoroutine(startarget(2f));
+            //StartCoroutine(startarget(2f));
             // 4초 후에 image 비활성화
             StartCoroutine(DisableImage(5f));
         }

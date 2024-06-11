@@ -301,15 +301,23 @@ public class PlayerController : MonoBehaviour
         /*if (Input.GetKeyDown(KeyCode.W) || Input.GetKeyDown(KeyCode.A) ||
         Input.GetKeyDown(KeyCode.S) || Input.GetKeyDown(KeyCode.D))
         {
-            SoundManager.instance.SFXPlay("Walk", clip, true);
-        }
+            if (!GameManager.canPlayerMove || !GameManager.canPlayerMove2 || GameManager.isPause)
+            {
+                SoundManager.instance.SFXStop("Walk");
+            }
+            else
+            {
+                SoundManager.instance.SFXPlay("Walk", clip, true);
+            }
+        }*/
+        
 
         if (!Input.GetKey(KeyCode.W) && !Input.GetKey(KeyCode.A) &&
             !Input.GetKey(KeyCode.S) && !Input.GetKey(KeyCode.D))
         {
             SoundManager.instance.SFXStop("Walk");
         }
-        */
+        
         float _moveDirX = Input.GetAxisRaw("Horizontal");
         float _moveDirz = Input.GetAxisRaw("Vertical");
 

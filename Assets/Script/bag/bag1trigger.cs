@@ -26,7 +26,10 @@ public class bag1trigger : MonoBehaviour
     public PauseMenu menu;
 
     public bool message1;
+    //public bool message2 = false;
     
+
+
 
     private void Start()
     {
@@ -37,6 +40,7 @@ public class bag1trigger : MonoBehaviour
     {
         if (trigger && !trigger2) 
         {
+            //message2 = true;
             messagetext.text = "메시지가 왔습니다.";
             T_img.SetActive(true);
             Playercon.Messagenum = 4;
@@ -60,6 +64,9 @@ public class bag1trigger : MonoBehaviour
     {
         if (other.tag == "ViewPoint")
             trigger = true;
-
+        if (other.tag == "Player")
+        {
+            trigger = true;
+        }
     }
 }

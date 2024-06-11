@@ -52,13 +52,14 @@ public class PauseMenu : MonoBehaviour
     private bool isGalleryActive = false;
     private bool isNoteActive = false;
 
+    public GameObject sinmon; // Add this line
     public AudioClip[] clip;
 
     void Update()
     {
         if (Input.GetKeyDown(KeyCode.Tab) && !mainmen.activeSelf&& player.hasPhone)
         {
-            if (!GameManager.isPause)
+            if (!GameManager.isPause && !sinmon.activeSelf)
             {
                 SoundManager.instance.SFXPlay("Phone_open", clip[0], false);
                 CallMenu();

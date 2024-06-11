@@ -24,6 +24,7 @@ public class lookShadow : MonoBehaviour
     public Light shadowlight;
 
     public AudioClip sfxclip;
+    public AudioClip sfxclip2;
     public AudioClip bgm;
 
     void Start()
@@ -123,6 +124,7 @@ public class lookShadow : MonoBehaviour
         StartCoroutine(FollowObjectRotation());
         StartCoroutine(removeobj());
         SoundManager.instance.SFXPlay("shadow2", sfxclip);
+        SoundManager.instance.SFXPlay("shadow1", sfxclip2);
         autoProceedDelay = 3f;
         yield return StartCoroutine(NormalChat("거기 누구 있어요?"));
         shadowlight.gameObject.SetActive(false);

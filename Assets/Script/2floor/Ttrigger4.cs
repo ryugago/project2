@@ -173,7 +173,7 @@ public class Ttrigger4 : MonoBehaviour
         GameManager.canPlayerMove2 = true;
         Playercon.notenum = 3;
         //notepage.notenum = 3;
-        intertxt.text = "메모장이 업데이트가 되었습니다";
+        intertxt.text = "노트가 업데이트 됐습니다.";
         yield return new WaitForSeconds(2f);
         intertxt.text = " ";
         quest1.text = "중앙으로 이동하기.";

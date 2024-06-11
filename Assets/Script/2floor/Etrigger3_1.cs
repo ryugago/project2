@@ -16,6 +16,11 @@ public class Etrigger3_1 : MonoBehaviour
 
     public AudioClip toiletsound;
     // Update is called once per frame
+
+    private void Start()
+    {
+        Topen.SetActive(false);
+    }
     void Update()
     {
         if (trigger.Ntrigger&& trigger1&& trigger2)

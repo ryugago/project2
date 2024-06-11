@@ -32,7 +32,6 @@ public class interactiontextmessageicon : MonoBehaviour
     {
         if (!(intertxt.text == " ") && !(intertxt.text == ""))
         {
-            backimg.enabled = true;
             if (intertxt.text == "메시지가 왔습니다.")
             {
                 if (onesound)
@@ -40,11 +39,13 @@ public class interactiontextmessageicon : MonoBehaviour
                     onesound = false;
                     SoundManager.instance.SFXPlay("PhoneCall", clip, false);
                 }
+                backimg.enabled = true;
                 keyT.SetActive(true);
                 messageicon.SetActive(true);
             }
             else if (intertxt.text == "전화가 왔습니다.")
             {
+                backimg.enabled = true;
                 keyT.SetActive(true);
                 callicon.SetActive(true);
             }
@@ -56,6 +57,7 @@ public class interactiontextmessageicon : MonoBehaviour
                     onesound = false;
                     SoundManager.instance.SFXPlay("PhoneCall", clip, false);
                 }
+                backimg.enabled = true;
                 noteicon.SetActive(true);
             }
         }

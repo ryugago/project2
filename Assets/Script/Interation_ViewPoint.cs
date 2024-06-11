@@ -45,10 +45,10 @@ public class Interation_ViewPoint : MonoBehaviour
                 if (trigger1)
                 {
                     trigger1 = false;
-                    quest.text = "기장실로 가보자";
+                    //quest.text = "기장실로 가보자";
                     Invoke("questde", 2f);
                 }
-                StartCoroutine(ResetQuestText());
+                //StartCoroutine(ResetQuestText());
                 Item item = nearObject.GetComponent<Item>();
                 int keyIndex = item.value;
                 playercontroll.hasKeys[keyIndex] = true;

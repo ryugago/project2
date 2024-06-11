@@ -36,7 +36,7 @@ public class Ttrigger2 : MonoBehaviour
         {
             GameManager.canPlayerMove2 = false;
             armpivot.enabled = false;
-            Tinteraction.text = "전화가 왔습니다";
+            Tinteraction.text = "전화가 왔습니다.";
             takecall.SetActive(true);
             Iphone.sprite = callimg;
             if (Input.GetKeyDown(KeyCode.T))

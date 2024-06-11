@@ -15,6 +15,8 @@ public class chatpillar : MonoBehaviour
 
     bool isButtonClicked = false;
 
+    public GameObject broken_pillar;
+
     void Start()
     {
         StartCoroutine(TextPractice());
@@ -70,8 +72,10 @@ public class chatpillar : MonoBehaviour
     IEnumerator TextPractice()
     {
         yield return StartCoroutine(NormalChat("¿·±Ò∏∏.. π´Ωºº“∏Æ∞°??"));
+        broken_pillar.SetActive(true);
         yield return StartCoroutine(NormalChat("±‚µ’¿Ã.. ±‚µ’¿Ã!! æ≤∑Ø¡≥æÓ!!"));
         GameManager.canPlayerMove2 = true;
+        autoProceedDelay = 0f;
         yield return StartCoroutine(NormalChat(" "));
     }
 }

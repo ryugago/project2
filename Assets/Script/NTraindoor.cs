@@ -47,10 +47,10 @@ public class NTraindoor : MonoBehaviour
         autoProceedDelay = 3f;
         yield return StartCoroutine(NormalChat("지하철 끝에 빛이..."));
         autoProceedDelay = 0f;
-        quest.text = "빛나는 곳으로 가보자";
+        //quest.text = "빛나는 곳으로 가보자";
         yield return StartCoroutine(NormalChat(" "));
-        yield return new WaitForSeconds(1f);
-        quest.text = " ";
+        //yield return new WaitForSeconds(1f);
+        //quest.text = " ";
 
     }
 

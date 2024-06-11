@@ -13,7 +13,15 @@ public class looksinmon : MonoBehaviour
     public AudioClip sinmonsound;
 
     // Update is called once per frame
+
+
+
     void Update()
+    {
+        
+    }
+
+    private void LateUpdate()
     {
         if (look)
         {
@@ -34,7 +42,7 @@ public class looksinmon : MonoBehaviour
     public void sinmonexit()
     {
         looksimon.SetActive(false);
-        //GameManager.isPause = false;
+        GameManager.isPause = false;
         after.enabled = true;
     }
 
