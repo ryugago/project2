@@ -24,7 +24,6 @@ public class lookShadow : MonoBehaviour
     public Light shadowlight;
 
     public AudioClip sfxclip;
-    public AudioClip sfxclip2;
     public AudioClip bgm;
 
     void Start()
@@ -123,8 +122,7 @@ public class lookShadow : MonoBehaviour
         shadow.SetActive(true);
         StartCoroutine(FollowObjectRotation());
         StartCoroutine(removeobj());
-        SoundManager.instance.SFXPlay("shadow2", sfxclip);
-        SoundManager.instance.SFXPlay("shadow1", sfxclip2);
+        SoundManager.instance.SFXPlay("shadow1", sfxclip);
         autoProceedDelay = 3f;
         yield return StartCoroutine(NormalChat("거기 누구 있어요?"));
         shadowlight.gameObject.SetActive(false);
@@ -135,8 +133,8 @@ public class lookShadow : MonoBehaviour
         autoProceedDelay = 0f;
         shadowlight.gameObject.SetActive(false);
         SoundManager.instance.BgSoundPlay(bgm);
-        yield return StartCoroutine(NormalChat(" "));
         GameManager.canPlayerMove2 = true;
+        yield return StartCoroutine(NormalChat(" "));
     }
 
     private void OnTriggerEnter(Collider other)

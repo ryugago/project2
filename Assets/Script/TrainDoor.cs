@@ -55,7 +55,7 @@ public class TrainDoor : MonoBehaviour
                 {
                     Isplayer2 = false;
                     StartCoroutine(TextPractice());
-                    quest.text = "레버가 고장났습니다";
+                    //quest.text = "레버가 고장났습니다";
                     trigger_open = true;
                     Invoke("ClearInteractionText", 2f);
                     /*keydowntxt.gameObject.SetActive(true);

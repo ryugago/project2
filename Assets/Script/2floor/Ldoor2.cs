@@ -47,6 +47,8 @@ public class Ldoor2 : MonoBehaviour
 
     public bool enble = true;
 
+    public AudioClip clip;
+
     private void Start()
     {
         player = GameObject.FindGameObjectWithTag("Player");
@@ -75,6 +77,7 @@ public class Ldoor2 : MonoBehaviour
         }*/
         if (trigger1 && trigger2)
         {
+            jusa.enabled = true;
             foreach (GameObject TV in CCTV)
             {
                 TV.SetActive(true);
@@ -121,6 +124,7 @@ public class Ldoor2 : MonoBehaviour
         DoubleVision.Settings settings = DoubleVision.GetSettings();
         settings.strength.z = 0f;
         // 1.4초 후에 실행될 작업들
+        SoundManager.instance.SFXPlay("jusasound", clip);
         yield return new WaitForSeconds(1f); // 1초 대기
 
         hand4ren.material = hand4ma;                                     //phone.SetActive(true);
@@ -173,10 +177,10 @@ public class Ldoor2 : MonoBehaviour
         SoundManager.instance.SFXPlay("gateclosesound", gate_close_sound);
         quest2.text = " ";
         GameManager.canPlayerMove2 = false;
-        jusa.enabled = true;
         Ocamer.enabled = true;
         Oplayer.enabled = true;
-        jusa.enabled = true;
+        Ptrip.enabled = true;
+
         yield return StartCoroutine(NormalChat("이상해... 너무 이상해..."));
         DoubleVision.AddRenderFeature();
         DoubleVision.Settings settings = DoubleVision.GetSettings();

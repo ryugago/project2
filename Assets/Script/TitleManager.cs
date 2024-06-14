@@ -9,10 +9,11 @@ public class TitleManager : MonoBehaviour
 
     private SaveNLoad theSaveNLoad;
     private DataManager thedata;
+    public GameObject optionwindow;
+
     public GameObject loading;
 
-
-
+    
     private void Awake()
     {
         
@@ -23,6 +24,17 @@ public class TitleManager : MonoBehaviour
         }
         else
             Destroy(this.gameObject);
+    }
+
+    private void Update()
+    {
+        if (optionwindow.activeSelf == true)
+        {
+            if (Input.GetKeyDown(KeyCode.Escape))
+            {
+                OptionEXitButton();
+            }
+        }
     }
 
     public void StartScene()
@@ -63,6 +75,15 @@ public class TitleManager : MonoBehaviour
         
         thedata.DataLoad();
         Destroy(gameObject);
+    }
+
+    public void OptionButton()
+    {
+        optionwindow.SetActive(true);
+    }
+    public void OptionEXitButton()
+    {
+        optionwindow.SetActive(false);
     }
 
     public void QuitGame()

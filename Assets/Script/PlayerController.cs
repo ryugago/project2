@@ -7,6 +7,7 @@ public class PlayerController : MonoBehaviour
     [SerializeField]
     private float walkSpeed;
     public AudioClip clip;
+    public AudioClip runclip;
     [SerializeField]
     private float runSpeed;
     [SerializeField]
@@ -65,7 +66,7 @@ public class PlayerController : MonoBehaviour
     private GameObject[] mess;
 
     public int Messagenum = 1;
-    
+
     public int notenum = 0;
 
     private Vector3 moveDirection;
@@ -83,14 +84,23 @@ public class PlayerController : MonoBehaviour
         originPosY = theCamera.transform.localPosition.y;
         applyCrouchPosY = originPosY;
 
-        foreach(GameObject message in mess)
+        foreach (GameObject message in mess)
         {
             message.SetActive(false);
         }
     }
-    
+
     void Update()
     {
+        if (Input.GetKeyDown(KeyCode.Minus))
+        {
+            hasPhone = true;
+        }
+        if (!GameManager.canPlayerMove || !GameManager.canPlayerMove2 || GameManager.isPause || !GameManager.onlycamera)
+        {
+            SoundManager.instance.SFXStop("Walk");
+            SoundManager.instance.SFXStop("Run");
+        }
         for (int i = 0; i < Messagenum; i++)
         {
             mess[i].SetActive(true);
@@ -217,7 +227,7 @@ public class PlayerController : MonoBehaviour
             StartCoroutine(CrouchCoroutine(1.2f, 2f));
         }
 
-        
+
         //theCamera.transform.localPosition = new Vector3(theCamera.transform.localPosition.x, applyCrouchPosY,theCamera.transform.localPosition.z);
     }
 
@@ -262,7 +272,7 @@ public class PlayerController : MonoBehaviour
 
     private void Jump()
     {
-       if (isCrouch)
+        if (isCrouch)
             Crouch();
 
         myRigid.velocity = transform.up * jumpForce;
@@ -298,26 +308,20 @@ public class PlayerController : MonoBehaviour
 
     private void Move()
     {
-        /*if (Input.GetKeyDown(KeyCode.W) || Input.GetKeyDown(KeyCode.A) ||
+        if (Input.GetKeyDown(KeyCode.W) || Input.GetKeyDown(KeyCode.A) ||
         Input.GetKeyDown(KeyCode.S) || Input.GetKeyDown(KeyCode.D))
         {
-            if (!GameManager.canPlayerMove || !GameManager.canPlayerMove2 || GameManager.isPause)
-            {
-                SoundManager.instance.SFXStop("Walk");
-            }
-            else
-            {
-                SoundManager.instance.SFXPlay("Walk", clip, true);
-            }
-        }*/
-        
+            SoundManager.instance.SFXPlayVolume("Walk", clip, 0.3f, true);
+        }
+
 
         if (!Input.GetKey(KeyCode.W) && !Input.GetKey(KeyCode.A) &&
             !Input.GetKey(KeyCode.S) && !Input.GetKey(KeyCode.D))
         {
             SoundManager.instance.SFXStop("Walk");
+            SoundManager.instance.SFXStop("Run");
         }
-        
+
         float _moveDirX = Input.GetAxisRaw("Horizontal");
         float _moveDirz = Input.GetAxisRaw("Vertical");
 
@@ -372,5 +376,5 @@ public class PlayerController : MonoBehaviour
         StopToWall();
     }
 
-    
+
 }

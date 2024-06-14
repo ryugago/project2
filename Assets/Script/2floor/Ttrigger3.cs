@@ -61,7 +61,7 @@ public class Ttrigger3 : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        if (Ntrigger.sadare)
+        //if (Ntrigger.sadare)
         {
             if (other.tag == "Player")
             {

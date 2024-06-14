@@ -23,7 +23,7 @@ public class Ttrigger4_2 : MonoBehaviour
             {
                 trigger2 = false;
                 SoundManager.instance.SFXPlay("button", buttonsound);
-                SoundManager.instance.SFXPlay("shuttersound", shuttersound);
+                SoundManager.instance.SFXPlayVolume("shuttersound", shuttersound, 0.5f);
                 dooropen.SetTrigger("open");
                 button_img.SetActive(false);
             }

@@ -17,8 +17,11 @@ public class pillar : MonoBehaviour
 
     public AudioClip clip;
 
+    public GameObject pillarob;
+
     private void Start()
     {
+        pillarob.SetActive(false);
         Lightlookpillar.gameObject.SetActive(false);
 
     }
@@ -55,6 +58,8 @@ public class pillar : MonoBehaviour
         lightright.SetActive(false);
         yield return new WaitForSeconds(0.3f); // delayTime만큼 대기
         lightright.SetActive(true);
+
+        //pillarob.SetActive(tru);
         yield return new WaitForSeconds(1f); // delayTime만큼 대기
         lightright.SetActive(false);
         yield return new WaitForSeconds(0.3f); // delayTime만큼 대기

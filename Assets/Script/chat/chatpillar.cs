@@ -17,6 +17,7 @@ public class chatpillar : MonoBehaviour
 
     public GameObject broken_pillar;
 
+
     void Start()
     {
         StartCoroutine(TextPractice());

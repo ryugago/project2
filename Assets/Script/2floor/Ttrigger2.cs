@@ -25,6 +25,8 @@ public class Ttrigger2 : MonoBehaviour
 
     public Ttriggerchat chat_a2;
 
+    public AudioClip clip;
+
     void Start()
     {
         StartCoroutine(TextPractice());
@@ -37,10 +39,12 @@ public class Ttrigger2 : MonoBehaviour
             GameManager.canPlayerMove2 = false;
             armpivot.enabled = false;
             Tinteraction.text = "전화가 왔습니다.";
+            SoundManager.instance.SFXPlay("Call", clip);
             takecall.SetActive(true);
             Iphone.sprite = callimg;
             if (Input.GetKeyDown(KeyCode.T))
             {
+                SoundManager.instance.SFXStop("Call");
                 takecall.SetActive(false);
                 Tinteraction.text = " ";
                 Iphone.sprite = callimg2;

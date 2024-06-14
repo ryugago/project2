@@ -17,6 +17,8 @@ public class findlever : MonoBehaviour
 
     bool isButtonClicked = false;
 
+    public AudioClip clip;
+
     void Start()
     {
         StartCoroutine(TextPractice());
@@ -72,10 +74,12 @@ public class findlever : MonoBehaviour
     IEnumerator TextPractice()
     {
         autoProceedDelay = 2f;
+        SoundManager.instance.BgSoundPlay(clip);
         yield return StartCoroutine(NormalChat("아니!! 갑자기 어디서 불이!!"));
         yield return StartCoroutine(NormalChat("불이 이쪽으로 오고 있어!!"));
         yield return StartCoroutine(NormalChat("빨리 여기서 나가야해!!"));
         //quest.text = "지하철을 탈출 하십시오.";
+        autoProceedDelay = 0f;
         yield return StartCoroutine(NormalChat(" "));
         //quest.text = " ";
     }

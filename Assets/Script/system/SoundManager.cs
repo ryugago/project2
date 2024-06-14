@@ -28,6 +28,11 @@ public class SoundManager : MonoBehaviour
         }
     }
 
+    private void Start()
+    {
+        //BgSoundPlay(bglist[0]);
+    }
+
     private void OnsceneLoaded(Scene arg0, LoadSceneMode arg1)
     {
         for (int i = 0; i < bglist.Length; i++)
@@ -63,6 +68,26 @@ public class SoundManager : MonoBehaviour
         audioSource.outputAudioMixerGroup = mixer.FindMatchingGroups("SFX")[0];
         audioSource.clip = clip;
         audioSource.loop = loop;
+        audioSource.Play();
+
+        if (!loop)
+        {
+            Destroy(go, clip.length);
+        }
+    }
+
+    public void SFXPlayVolume(string sfxName, AudioClip clip, float volume ,bool loop = false)
+    {
+        // 기존에 동일한 사운드가 재생 중이면 중복되지 않도록 처리
+        AudioSource existingSource = GameObject.Find(sfxName + "Sound")?.GetComponent<AudioSource>();
+        if (existingSource != null && existingSource.isPlaying) return;
+
+        GameObject go = new GameObject(sfxName + "Sound");
+        AudioSource audioSource = go.AddComponent<AudioSource>();
+        audioSource.outputAudioMixerGroup = mixer.FindMatchingGroups("SFX")[0];
+        audioSource.clip = clip;
+        audioSource.loop = loop;
+        audioSource.volume = volume;
         audioSource.Play();
 
         if (!loop)

@@ -43,9 +43,15 @@ public class pickjusa : MonoBehaviour
             nearObject = other.gameObject;
 
         }
-        else if(other.tag != null)
+    }
+    private void OnTriggerExit(Collider other)
+    {
+        if (other.tag == "ViewPoint")
         {
+
+            pickup.SetActive(false);
             nearObject = null;
+
         }
     }
 }

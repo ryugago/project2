@@ -47,6 +47,7 @@ public class Ttrigger4 : MonoBehaviour
 
     public TMPro.TMP_Text quest1;
 
+    public AudioClip clip;
 
     // Start is called before the first frame update
     void Start()
@@ -99,6 +100,7 @@ public class Ttrigger4 : MonoBehaviour
         blurEffect.BlurRadius = 0;
         mental_breakdown.SetFloat("_Fullscreenintensity", 0f);
         hand5ren.material = hand5ma;
+        SoundManager.instance.SFXPlay("jusasound", clip);
         yield return new WaitForSeconds(1f); // 1√  ¥Î±‚
                                              //phone.SetActive(true);
         jusa.SetBool("jusa", false);

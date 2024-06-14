@@ -73,6 +73,7 @@ public class first1 : MonoBehaviour
     IEnumerator TextPractice()
     {
         yield return StartCoroutine(NormalChat("누군가 나를 지켜보는것 같아"));
+        autoProceedDelay = 0f;
         yield return StartCoroutine(NormalChat(" "));
         Destroy(gameObject);
     }

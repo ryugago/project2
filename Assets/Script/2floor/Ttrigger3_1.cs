@@ -18,6 +18,8 @@ public class Ttrigger3_1 : MonoBehaviour
 
     public Animator TdropPlayer;
 
+    public AudioClip clip;
+
     void Start()
     {
         StartCoroutine(TextPractice());
@@ -74,16 +76,20 @@ public class Ttrigger3_1 : MonoBehaviour
 
     IEnumerator TextPractice()
     {
-        autoProceedDelay = 3f;
-        yield return StartCoroutine(NormalChat("여기라도 가야해.."));
+        SoundManager.instance.SFXStop("Walk");
+        autoProceedDelay = 5f;
+        yield return StartCoroutine(NormalChat("여기를 나가야해.."));
         autoProceedDelay = 3f;
         yield return StartCoroutine(NormalChat("왜이리 미끄러워..."));
-        autoProceedDelay = 6.2f;
-        yield return StartCoroutine(NormalChat("제발!!! 으아아아!!!"));
+        autoProceedDelay = 4.5f;
+        SoundManager.instance.SFXPlay("sadare", clip);
+        yield return StartCoroutine(NormalChat("여기로 나갈수 있겠지.."));
         autoProceedDelay = 3f;
+        yield return StartCoroutine(NormalChat("제발!!! 으아아아!!!"));
+        autoProceedDelay = 3.2f;
         TdropPlayer.SetBool("trigger", true);
         yield return StartCoroutine(NormalChat("으아악!!"));
-        autoProceedDelay = 0.001f;
+        autoProceedDelay = 0f;
         yield return StartCoroutine(NormalChat(" ")); chat.enabled = true;
     }
 }

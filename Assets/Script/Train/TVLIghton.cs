@@ -5,6 +5,7 @@ using UnityEngine;
 public class TVLIghton : MonoBehaviour
 {
     private bool istrigger;
+    private bool istrigger1=true;
 
     public Animator japangi;
     public Light TVlight;
@@ -19,6 +20,8 @@ public class TVLIghton : MonoBehaviour
 
 
     public TMPro.TMP_Text quest;
+
+    public AudioClip clip;
     // Start is called before the first frame update
     void Start()
     {
@@ -28,8 +31,9 @@ public class TVLIghton : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (istrigger)
+        if (istrigger && istrigger1) 
         {
+            istrigger1 = false;
             Invoke("ActivateTrap", 2f);
             tvsound.SetActive(true);
             TVlight.gameObject.SetActive(true);
@@ -59,6 +63,7 @@ public class TVLIghton : MonoBehaviour
     void ActivateTrap()
     {
         japangi.SetTrigger("move"); // 애니메이션의 트리거를 발동시킴
+        SoundManager.instance.SFXPlay("vending", clip);
         //TriggerCollider.gameObject.SetActive(true); // 비활성화된 콜라이더를 활성화
     }
 }

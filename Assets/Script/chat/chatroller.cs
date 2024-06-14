@@ -17,6 +17,8 @@ public class chatroller : MonoBehaviour
 
     bool isButtonClicked = false;
 
+    public AudioClip clip;
+
     void Start()
     {
         StartCoroutine(TextPractice());
@@ -71,12 +73,14 @@ public class chatroller : MonoBehaviour
 
     IEnumerator TextPractice()
     {
+        SoundManager.instance.SFXStop("Walk");
         autoProceedDelay = 2;
         yield return StartCoroutine(NormalChat(" "));
         autoProceedDelay = 3;
         yield return StartCoroutine(NormalChat("¹¹¾ß?? ¹«½¼¼Ò¸®¾ß?"));
         autoProceedDelay = 6;
         hit_effect.SetFloat("_Fullscreenintensity", 0.2f);
+        SoundManager.instance.SFXPlay("stairs", clip);
         yield return StartCoroutine(NormalChat("¾î..¾î.. À¸¾Æ¾Ç!!"));
         autoProceedDelay = 9; //20
         yield return StartCoroutine(NormalChat("À¸.. À¸À¹.. ¾ÆÆÄ¶ó.."));

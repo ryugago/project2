@@ -28,7 +28,7 @@ public class trainhit : MonoBehaviour
             SoundManager.instance.SFXPlay("tinnitus", clip);
             Blurry.AddRenderFeature();
             Blurry.Settings setting = Blurry.GetSettings();
-            StartCoroutine(IncreaseBlurryStrength(0.2f, 0.5f));
+            StartCoroutine(IncreaseBlurryStrength(0.12f, 0.5f));
             StartCoroutine(TextPractice());
         }
     }
