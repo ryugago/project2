@@ -12,7 +12,7 @@ public class TrainDoor3open1 : MonoBehaviour
 
     public TMP_Text quest;
 
-    private bool isDoor = false;
+    //private bool isDoor = false;
     private bool Isplayer = false;
     private bool Isplayer1 = true;
 
@@ -32,15 +32,15 @@ public class TrainDoor3open1 : MonoBehaviour
             open.SetActive(true); // 문이 열려 있을 때 "Open" 오브젝트 비활성화
             if (Input.GetKeyDown(KeyCode.E))
             {
-                Isplayer1 = false;
                 SoundManager.instance.SFXPlay("button", CTButtonsound);
                 SoundManager.instance.BgSoundPlay(bgmsound);
                 Carm = true;
-                isDoor = !isDoor;
+                //isDoor = !isDoor;
                 Train_door1.SetBool("door", true); // 애니메이션의 bool 변수를 false로 설정하여 정지
                 Train_door2.SetBool("door", true); // 애니메이션의 bool 변수를 false로 설정하여 정지
                 //quest.text = "다음 호차로 가보자";
                 StartCoroutine(ResetQuestText());
+                Isplayer1 = false;
             }
         }
     }
