@@ -175,7 +175,9 @@ public class PhoneAnimation : MonoBehaviour
         autoProceedDelay = 2f;
         yield return StartCoroutine(NormalChat("제말 안들리세요?"));
         autoProceedDelay = 6f;
+        SoundManager.instance.SFXPlay("Phonecut", clip[1]);
         yield return StartCoroutine(NormalChat("뭐야.. 아무말도 없잖아.."));
+        SoundManager.instance.SFXStop("Phonecut");
         autoProceedDelay = 5f;
         yield return StartCoroutine(NormalChat("아까 그 모르는 번호야..."));
         message = true;

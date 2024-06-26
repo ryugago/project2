@@ -16,6 +16,7 @@ public class rollerplayer : MonoBehaviour
     public Quaternion rollafterplayer;
 
     bool istrigger = false;
+    bool istrigger2 = true;
     public gate1trap trap;
 
     public chatroller chat;
@@ -24,8 +25,9 @@ public class rollerplayer : MonoBehaviour
     public GameObject boomsoundaudio;
     void Update()
     {
-        if (istrigger&& trap.trap)
+        if (istrigger && istrigger2 && trap.trap) 
         {
+            istrigger2 = false;
             StartCoroutine(boomsound());
 
             playertrans.position = new Vector3(128.9314f, 1.418863f, 118.4941f);

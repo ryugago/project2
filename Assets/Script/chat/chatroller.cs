@@ -87,9 +87,9 @@ public class chatroller : MonoBehaviour
         autoProceedDelay = 3; //23
         yield return StartCoroutine(NormalChat("아까 그 소리는 뭐였지.."));
         autoProceedDelay = 3; //26
-        yield return StartCoroutine(NormalChat("기..길이 막힌건가?"));
+        yield return StartCoroutine(NormalChat("길이 막혔어.."));
         autoProceedDelay = 3; //29
-        yield return StartCoroutine(NormalChat("나는 어디로 가야되는걸까..."));
+        yield return StartCoroutine(NormalChat("어디로 가야 하지.."));
         autoProceedDelay = 3;//32
         yield return StartCoroutine(NormalChat("일단 기둥쪽으로 가볼까..."));
         autoProceedDelay = 3;//35

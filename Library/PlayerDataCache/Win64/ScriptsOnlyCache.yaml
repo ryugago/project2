@@ -929,7 +929,7 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 29016}
     - Class: 114
-      Script: {instanceID: 85832}
+      Script: {instanceID: 83848}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -4710,4 +4710,4 @@ ScriptsOnlyBuild:
   - Assets/Scenes/TitleScene.unity
   - Assets/Scenes/GameScene.unity
   - Assets/Scenes/ToBeScene.unity
-  playerPath: C:/Users/respm/OneDrive/Desktop/hari_QA/HariStation.exe
+  playerPath: C:/Users/respm/OneDrive/Desktop/harigame/HariStation.exe

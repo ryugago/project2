@@ -110,13 +110,13 @@ public class incustmerroomchat : MonoBehaviour
 
         yield return StartCoroutine(NormalChat(" "));
         autoProceedDelay = 3f;
-        yield return StartCoroutine(NormalChat("어..어..문이..."));
+        yield return StartCoroutine(NormalChat("문이.."));
         autoProceedDelay = 3f;
-        yield return StartCoroutine(NormalChat("이런..문이 잠기다니.."));
+        yield return StartCoroutine(NormalChat("문이 잠기다니.."));
         autoProceedDelay = 3f;
         yield return StartCoroutine(NormalChat("잠깐만.."));
         autoProceedDelay = 3f;
-        yield return StartCoroutine(NormalChat("어디서 많이 본 장소같아..."));
+        yield return StartCoroutine(NormalChat("어디서 많이 본 장소 같아.."));
         autoProceedDelay = 0f;
         yield return StartCoroutine(NormalChat(" "));
         quest.text = "나갈 방법을 찾아보자.";

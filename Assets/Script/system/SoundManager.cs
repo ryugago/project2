@@ -42,17 +42,17 @@ public class SoundManager : MonoBehaviour
         }
     }
 
-    public void MasterSoundVolume(float val)
+    public void MasterSoundVolume(float val)// 마스터 사운드 조절
     {
         mixer.SetFloat("MasterVolume", MathF.Log10(val) * 20);
     }
 
-    public void BGSoundVolume(float val)
+    public void BGSoundVolume(float val)// 배경 사운드 조절
     {
         mixer.SetFloat("BGSoundVolume", MathF.Log10(val) * 20);
     }
 
-    public void SFXVolume(float val)
+    public void SFXVolume(float val)// SFX사운드 조절
     {
         mixer.SetFloat("SFXVolume", MathF.Log10(val) * 20);
     }
@@ -76,7 +76,7 @@ public class SoundManager : MonoBehaviour
         }
     }
 
-    public void SFXPlayVolume(string sfxName, AudioClip clip, float volume ,bool loop = false)
+    public void SFXPlayVolume(string sfxName, AudioClip clip, float volume ,bool loop = false)// SFX 사운드 생성
     {
         // 기존에 동일한 사운드가 재생 중이면 중복되지 않도록 처리
         AudioSource existingSource = GameObject.Find(sfxName + "Sound")?.GetComponent<AudioSource>();
@@ -96,7 +96,7 @@ public class SoundManager : MonoBehaviour
         }
     }
 
-    public void SFXStop(string sfxName)
+    public void SFXStop(string sfxName)// SFX사운드 종료
     {
         GameObject go = GameObject.Find(sfxName + "Sound");
         if (go != null)
@@ -110,7 +110,7 @@ public class SoundManager : MonoBehaviour
         }
     }
 
-    public void BgSoundPlay(AudioClip clip)
+    public void BgSoundPlay(AudioClip clip)// 배경 사운드 실행
     {
         if (bgSound.isPlaying)
         {
