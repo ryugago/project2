@@ -118,19 +118,32 @@ public class PauseMenu : MonoBehaviour
         }
     }
 
-    private void Callmainmenu()
+    private void Callmainmenu() //설정 화면
     {
         GameManager.isPause = true;
         mainmen.SetActive(true);
     }
 
-    private void Closemainmenu()
+    private void Closemainmenu()// 설정화면
     {
         GameManager.isPause = false;
         mainmen.SetActive(false);
     }
 
-    private void CloseMenu()
+    public void CallMenu()// 휴대폰 열기
+    {
+
+        phonetime.SetActive(true);
+        esckeylook.SetActive(true);
+        TABkeylook.SetActive(true);
+        GameManager.isPause = true;
+        alloutimg.SetActive(true);
+        go_BaseUi.SetActive(true);
+        Bhome.SetActive(true);
+        Bback.SetActive(true);
+    }
+
+    private void CloseMenu() /// 휴대폰 끄기
     {
         gallery.SetActive(false);
         call.SetActive(false);
@@ -154,27 +167,15 @@ public class PauseMenu : MonoBehaviour
         isNoteActive = false;
     }
 
-    public void ClickCall()
+    public void ClickCall()// 전화 어플
     {
         SoundManager.instance.SFXPlay("Phone_Click1", clip[2], false);
         call.SetActive(true);
         isCallActive = true;
     }
 
-    public void CallMenu()
-    {
-        
-        phonetime.SetActive(true);
-        esckeylook.SetActive(true);
-        TABkeylook.SetActive(true);
-        GameManager.isPause = true;
-        alloutimg.SetActive(true);
-        go_BaseUi.SetActive(true);
-        Bhome.SetActive(true);
-        Bback.SetActive(true);
-    }
 
-    public void ClickMessage()
+    public void ClickMessage()//메시지 어플
     {
         SoundManager.instance.SFXPlay("Phone_Click2", clip[2], false);
         messageback.SetActive(true);
@@ -182,14 +183,14 @@ public class PauseMenu : MonoBehaviour
         isMessageActive = true;
     }
 
-    public void ClickGallery()
+    public void ClickGallery()//갤러기 어플
     {
         SoundManager.instance.SFXPlay("Phone_Click3", clip[2], false);
         gallery.SetActive(true);
         isGalleryActive = true;
     }
 
-    public void Clicknote()
+    public void Clicknote()//노트 어플
     {
         SoundManager.instance.SFXPlay("Phone_Click4", clip[2], false);
         notemain.SetActive(true);
@@ -209,7 +210,7 @@ public class PauseMenu : MonoBehaviour
         quset.text = " ";
     }
 
-    public void home()
+    public void home()//홈버튼 누르기
     {
         messageback.SetActive(false);
         foreach (var noteObj in note)
@@ -227,7 +228,7 @@ public class PauseMenu : MonoBehaviour
         isNoteActive = false;
     }
 
-    public void allout()
+    public void allout()// 홈버튼, 뒤로버튼 
     {
         CloseMenu();
         messageback.SetActive(false);

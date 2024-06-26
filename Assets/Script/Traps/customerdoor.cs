@@ -115,7 +115,7 @@ public class customerdoor : MonoBehaviour
         autoProceedDelay = 1f;
         yield return StartCoroutine(NormalChat(" "));
         autoProceedDelay = 3f;
-        yield return StartCoroutine(NormalChat("문이 열렸어.. 저기가 고객 대기실인가.."));
+        yield return StartCoroutine(NormalChat("저기가 고객 대기실 인가.. "));
         custmerdoor.SetActive(false);
         GameManager.canPlayerMove2 = true;
         autoProceedDelay = 0f;

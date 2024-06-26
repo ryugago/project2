@@ -74,7 +74,7 @@ public class chatpillar : MonoBehaviour
     {
         yield return StartCoroutine(NormalChat("잠깐만.. 무슨소리가??"));
         broken_pillar.SetActive(true);
-        yield return StartCoroutine(NormalChat("기둥이.. 기둥이!! 쓰러졌어!!"));
+        //yield return StartCoroutine(NormalChat("기둥이.. 기둥이!! 쓰러졌어!!"));
         GameManager.canPlayerMove2 = true;
         autoProceedDelay = 0f;
         yield return StartCoroutine(NormalChat(" "));

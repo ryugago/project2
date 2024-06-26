@@ -32,7 +32,7 @@ public class drop_item : MonoBehaviour
     {
         if (!enabled)
             return;
-
+        
         //if (train_trap)
         if (train_trap && player.hasPhone && trap.trap)
         {

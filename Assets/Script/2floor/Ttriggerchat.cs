@@ -86,8 +86,9 @@ public class Ttriggerchat : MonoBehaviour
         yield return StartCoroutine(NormalChat("³Êµµ ´çÇØºÁ!! ¶Ò..¶Ò.."));
         TextChater.text = " ";
         SoundManager.instance.SFXStop("callcut");
-        SoundManager.instance.SFXPlay("waterdrop", clip);
+        autoProceedDelay = 2f;
         yield return StartCoroutine(NormalChat("¹¹.. ¿ì¿ó..."));
+        SoundManager.instance.SFXPlay("waterdrop", clip);
         //autoProceedDelay = 0.1f;
         //yield return StartCoroutine(NormalChat(" "));
     }

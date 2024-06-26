@@ -48,7 +48,8 @@ public class gate1trap : MonoBehaviour
                 inter.text = "잠겨있습니다";
                 pillar.SetActive(false);
                 trap = true;
-                StartCoroutine(TextPractice());
+                cutomertrigger = true;
+                //StartCoroutine(TextPractice());
             }
         }
     }
@@ -87,7 +88,7 @@ public class gate1trap : MonoBehaviour
             yield return null;
         }
     }
-
+    /*
     IEnumerator TextPractice()
     {
         GameManager.canPlayerMove2 = false;
@@ -97,7 +98,7 @@ public class gate1trap : MonoBehaviour
         GameManager.canPlayerMove2 = true;
         yield return StartCoroutine(NormalChat(" "));
     }
-
+    */
     private void OnTriggerEnter(Collider other)
     {
         if (other.tag == "ViewPoint")
