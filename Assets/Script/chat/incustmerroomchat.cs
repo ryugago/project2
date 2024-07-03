@@ -106,7 +106,7 @@ public class incustmerroomchat : MonoBehaviour
 
         Maincamera.SetCameraRotationX(0);
         PMaincamera.transform.localRotation = Quaternion.Euler(0, 0, 0);
-        StartCoroutine(MovePlayerToPosition(Player.transform, Pposition, Protation, 2f));
+        StartCoroutine(MovePlayerToPosition(Player.transform, Pposition, Protation, 1f));
 
         yield return StartCoroutine(NormalChat(" "));
         autoProceedDelay = 3f;
