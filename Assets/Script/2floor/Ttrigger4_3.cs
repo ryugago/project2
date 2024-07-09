@@ -26,7 +26,7 @@ public class Ttrigger4_3 : MonoBehaviour
     public Sprite callimg2;
     public Sprite callimg3;
     public TMPro.TMP_Text Tinteraction;
-    public GameObject takecall;
+    //public GameObject takecall;
 
     public Animator armpivot;
     public Animator doorclose;
@@ -55,14 +55,14 @@ public class Ttrigger4_3 : MonoBehaviour
         if (trigger3)
         {
             armpivot.enabled = false;
-            Tinteraction.text = "전화가 왔습니다";
-            takecall.SetActive(true);
+            Tinteraction.text = "전화가 왔습니다.";
+            //takecall.SetActive(true);
             Iphone.sprite = callimg;
             if (Input.GetKeyDown(KeyCode.T))
             {
                 trigger3 = false;
                 Tinteraction.text = " ";
-                takecall.SetActive(false);
+                //takecall.SetActive(false);
                 Iphone.sprite = callimg2;
                 StartCoroutine(TextPractice2());
             }
